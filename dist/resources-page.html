@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="/about-page.689f5f05.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400&display=swap">
+    <style>@media screen and (width <= 1024px) {
+  .custom-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    display: flex;
+  }
+
+  .custom-container > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-container img {
+    width: 50px;
+    height: 45px;
+  }
+
+  .custom-container .relative {
+    font-size: 22px;
+  }
+}
+
+#whoWeServeHeading {
+  text-align: center;
+  white-space: normal;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+@media screen and (width <= 750px) {
+  #whoWeServeHeading {
+    text-align: center;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 2.5rem;
+    line-height: 1.3;
+  }
+}
+
+@media screen and (width <= 450px) {
+  #whoWeServeHeading {
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+}
+</style>
+  </head>
+  <body>
+    <header class="self-stretch flex flex-row items-center justify-center py-[30px] px-5 box-border max-w-full text-left text-base text-midnightblue font-website-body-body-large-regular mq750:gap-11 mq450:gap-[22px] mq1225:gap-[88px] relative">
+      <div class="w-[1240px] flex flex-row items-center justify-between gap-5 max-w-full mq1050:w-[641px]">
+        <!-- Logo -->
+        <img class="h-11 w-[135px] relative object-cover" loading="lazy" alt="Logo" src="/image-1@2x.678ae692.png">
+    
+        <div class="hidden md:flex w-[599px] flex-row items-start justify-center py-0 px-0 box-border gap-10 max-w-full mq750:gap-5 mq1050:hidden">
+          <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">Home</a>
+          <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">About</a>
+          <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit] whitespace-nowrap">Why Fasten (Case Studies)</a>
+          <a class="[text-decoration:none] relative leading-[20px] font-bold text-[inherit]">Developers</a>
+          <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">Resources</a>
+        </div>
+    
+        <div class="hidden md:flex flex-row items-center justify-start gap-10">
+          <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit] inline-block min-w-[44px]">Login</a>
+          <button class="cursor-pointer [border:none] py-[15px] px-[31px] bg-mediumslateblue-200 flex-1 rounded-md flex flex-row items-center justify-center hover:bg-mediumslateblue-100">
+            <a class="[text-decoration:none] flex-1 relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center inline-block min-w-[59px]">Sign Up</a>
+          </button>
+        </div>
+    
+        <button id="hamburgerMenu" class="block md:hidden mr-7 text-neutral-900 focus:outline-none">
+          <div class="space-y-1.5">
+            <span class="block h-0.5 w-6 bg-current"></span>
+            <span class="block h-0.5 w-6 bg-current"></span>
+            <span class="block h-0.5 w-6 bg-current"></span>
+          </div>
+        </button>
+      </div>
+    </header>
+    
+    <div id="mobileMenu" class="hidden flex flex-col items-center justify-center gap-6 bg-white rounded-md shadow-md w-full fixed top-[80px] left-0 z-10 transition-transform duration-300 ease-in-out transform -translate-y-full">
+      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 mr-44 hover:bg-mediumslateblue-100 w-full text-center">Home</a>
+      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 mr-44 hover:bg-mediumslateblue-100 w-full text-center">About</a>
+      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 mr-44 hover:bg-mediumslateblue-100 w-full text-center whitespace-nowrap">Why Fasten (Case Studies)</a>
+      <a href="#" class="[text-decoration:none] text-lg font-bold text-midnightblue py-3 mr-44 hover:bg-mediumslateblue-100 w-full text-center">Developers</a>
+      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 mr-44 hover:bg-mediumslateblue-100 w-full text-center">Resources</a>
+      <div class="flex flex-col items-center justify-center gap-4 mt-4 w-full">
+        <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 mr-44 w-full text-center">Login</a>
+        <button class="cursor-pointer [border:none] py-[12px] px-[28px] bg-mediumslateblue-200 mr-44 rounded-md flex-1 flex items-center justify-center hover:bg-mediumslateblue-100 w-full">
+          <a class="[text-decoration:none] text-base leading-[20px] font-medium text-neutral-100 text-center w-full">Sign Up</a>
+        </button>
+      </div>
+    </div>
+    
+    <script>const hamburgerMenu = document.getElementById("hamburgerMenu");
+const mobileMenu = document.getElementById("mobileMenu");
+hamburgerMenu.addEventListener("click", ()=>{
+    mobileMenu.classList.toggle("hidden");
+    mobileMenu.style.transform = mobileMenu.classList.contains("hidden") ? "translateY(-100%)" : "translateY(0)";
+});
+document.addEventListener("click", (event)=>{
+    if (!mobileMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+        mobileMenu.classList.add("hidden");
+        mobileMenu.style.transform = "translateY(-100%)";
+    }
+});
+const menuItems = mobileMenu.querySelectorAll("a, button");
+menuItems.forEach((item)=>{
+    item.addEventListener("click", ()=>{
+        mobileMenu.classList.add("hidden");
+        mobileMenu.style.transform = "translateY(-100%)";
+    });
+});
+
+</script>
+    
+    
+  
+  
+
+    <div class="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
+      <div class="flex-1 rounded-xl overflow-hidden flex flex-col items-center justify-start pt-[80px] px-[35px] pb-[80px] box-border relative gap-8 max-w-full
+                  mq1225:pl-[70px] mq1225:pr-[70px] mq1225:box-border mq450:pt-[50px] mq450:pb-[50px] mq450:box-border mq750:pl-[35px] mq750:pr-[35px] mq750:box-border" style="background-image: url(&quot;image-2@2x.755c52b0.png&quot;); background-position: center; background-repeat: no-repeat; background-size: cover">
+    
+<!-- Title Text -->
+<h1 class="m-0 relative text-inherit tracking-[-0.02em] leading-[58px] font-semibold font-[Chivo] z-[1]
+          text-15xl sm:text-6xl sm:leading-[60px] sm:text-center text-white px-5 sm:px-0 mt-[80px]
+          md:mt-[60px] md:text-6xl md:leading-[58px] lg:text-7xl lg:leading-[70px] xl:text-[52px] xl:leading-[58px]">
+    Your Medical Records, Simplified
+</h1>
+
+
+    
+        <!-- Description Text -->
+        <div class="flex flex-col items-center justify-center px-4 sm:px-6 text-silver-100 z-[1] mt-1 md:mt-1">
+          <p class="font-[Chivo] font-normal text-[20px] lg:text-[22px] leading-[32px] text-center sm:text-xl sm:leading-[24px] sm:text-left sm:tracking-normal sm:whitespace-normal 
+                   md:text-[18px] md:leading-[28px] lg:text-3xl lg:leading-[36px]">
+                   Access your health records instantly and securely, with Fasten Connect. Your medical data is now<br>
+            <span class="block text-center mx-auto">always at your fingertips—no more waiting for faxes or paper forms.</span>
+          </p>
+        </div>
+    
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <section class="flex flex-col items-center justify-center mt-16 py-0 px-5 max-w-full text-center text-xl text-gray-200 font-website-body-body-large-regular">
+      <div class="w-full max-w-[1240px] flex flex-col gap-[100px] mq450:gap-[25px] mq825:gap-[50px]">
+        <div class="flex flex-col gap-[35px] max-w-full mq825:gap-[17px]">
+          <div class="leading-[30px] text-[#262626] font-medium mq450:text-base mq450:leading-[24px]">
+            With connections to the largest health systems & payers, like:
+          </div>
+    
+          <!-- Marquee Container -->
+          <div class="marquee-content flex gap-4 animate-marquee self-stretch h-[49px] flex-row items-center justify-start overflow-x-auto">
+            
+            <!-- Repeated Image Block for Marquee -->
+            <div class="h-[49px] w-auto flex-shrink-0 mx-2">
+              <img class="w-[238.2px] h-[32.6px] object-cover" loading="lazy" alt="Health System 1" src="/image-31@2x.1575da50.png">
+            </div>
+    
+            <div class="h-[49px] w-auto flex-shrink-0 mx-2">
+              <img class="w-[238.2px] h-[32.6px] object-cover" loading="lazy" alt="Health System 2" src="/image-31@2x.1575da50.png">
+            </div>
+    
+            <div class="h-[49px] w-auto flex-shrink-0 mx-2">
+              <img class="w-[238.2px] h-[32.6px] object-cover" loading="lazy" alt="Health System 3" src="/image-31@2x.1575da50.png">
+            </div>
+    
+            <div class="h-[49px] w-auto flex-shrink-0 mx-2">
+              <img class="w-[238.2px] h-[32.6px] object-cover" loading="lazy" alt="Health System 4" src="/image-31@2x.1575da50.png">
+            </div>
+    
+            <!-- Additional Images -->
+            <div class="h-[49px] w-auto flex-shrink-0 mx-2">
+              <img class="w-[238.2px] h-[32.6px] object-cover" loading="lazy" alt="Health System 5" src="/image-7@2x.5c90ae14.png">
+            </div>
+    
+            <div class="h-[49px] w-auto flex-shrink-0 mx-2">
+              <img class="w-[238.2px] h-[32.6px] object-cover" loading="lazy" alt="Health System 6" src="/image-51@2x.a748fb5c.png">
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="flex flex-col lg:flex-row justify-between items-center lg:items-start py-10 px-5 w-full mt-16">
+      <!-- Left Section -->
+      <div class="flex flex-col w-full mx-auto lg:w-[50%] lg:ml-16">
+        <!-- Title with line break -->
+        <div class="text-black font-Chivo font-semibold text-[32px] lg:text-[52px] leading-[42px] lg:leading-[62px] tracking-[-2%] mb-6 lg:mb-12 text-center lg:text-left">
+          How Fasten Health
+          <br>
+          Works for Patients
+        </div>
+    
+<!-- Three Sections -->
+<div class="mt-6 space-y-6 lg:space-y-4 w-full">
+  <!-- Section 1 -->
+  <div class="bg-[#F7F6FF] rounded-[12px] w-[547px] h-[90px] p-[15px_13px_15px_13px] flex gap-[10px] items-center mx-auto -translate-x-24">
+    <div class="bg-[#6241D4] text-white font-semibold text-[24px] lg:text-[32px] w-[45px] h-[45px] flex items-center justify-center rounded-full">01</div>
+    <div>
+      <div class="text-[#3D3D3D] font-Chivo font-medium text-[18px] leading-[21.42px] w-[466px] h-[21px] pb-1">
+        Search for Your Provider or Health Plan
+      </div>
+      <div class="text-[#646464] font-Chivo font-normal text-[16px] leading-[19.04px] w-[466px] h-[38px]">
+        Find your provider or health plan from Fasten Connect's
+        <br>
+        network of healthcare endpoints.
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="bg-[#FFFFFF] rounded-[12px] w-[547px] h-[90px] p-[15px_13px_15px_13px] flex gap-[10px] items-center mx-auto shadow-[0px_4px_8px_rgba(0,0,0,0.1)] -translate-x-24">
+    <div class="bg-[#F7F6FF] text-[#6241D4] font-semibold text-[24px] lg:text-[32px] w-[45px] h-[45px] flex items-center justify-center rounded-full">02</div>
+    <div>
+      <div class="text-[#3D3D3D] font-Chivo font-medium text-[18px] leading-[21.42px] w-[466px] h-[21px] pb-1">
+        Authenticate and Grant Access
+      </div>
+      <div class="text-[#646464] font-Chivo font-normal text-[16px] leading-[19.04px] w-[466px] h-[38px]">
+        Use your existing provider or health plan credentials to
+        <br>
+        authenticate and give consent for data sharing.
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="bg-[#FFFFFF] rounded-[12px] w-[547px] h-[90px] p-[15px_13px_15px_13px] flex gap-[10px] items-center mx-auto shadow-[0px_4px_8px_rgba(0,0,0,0.1)] -translate-x-24">
+    <div class="bg-[#F7F6FF] text-[#6241D4] font-semibold text-[24px] lg:text-[32px] w-[45px] h-[45px] flex items-center justify-center rounded-full">03</div>
+    <div>
+      <div class="text-[#3D3D3D] font-Chivo font-medium text-[18px] leading-[21.42px] w-[466px] h-[21px] pb-1">
+        Instant Access to Your Data
+      </div>
+      <div class="text-[#646464] font-Chivo font-normal text-[16px] leading-[19.04px] w-[466px] h-[38px]">
+        Fasten Connect pulls and standardizes health data in real-
+        <br>
+        time, making it available in FHIR format.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    
+    
+    
+    
+    
+<div class="relative flex justify-end items-start ml-6 hidden lg:block mr-24">
+  
+  <div class="absolute top-[195px] right-[-15px] w-[557px] h-[400px] rounded-[22.24px] bg-[radial-gradient(circle,_#6944BA_40%,_#31207200)] opacity-40 shadow-[0px_4px_22px_#6944BA] z-[-1]"></div>
+
+  <div class="absolute top-[77px] right-[10px] w-[287px] h-[488px] rounded-[22.24px] bg-[radial-gradient(circle,_#6944BA_40%,_#31207200)] opacity-40 shadow-[0px_4px_22px_#6944BA] z-[-1]"></div>
+
+  <!-- Image 1 -->
+  <div class="absolute top-[80px] right-[313px] w-[282.44px] h-[576px] rounded-[45.98px]">
+    <img src="/mobone.a6cc3771.png" alt="Mobile Image 1" class="w-full h-full object-cover rounded-[45.98px]">
+  </div>
+
+  <!-- Image 2 -->
+  <div class="absolute top-[20px] right-[40px] w-[258px] h-[524px] rounded-[41px]">
+    <img src="/mobtwo.5af6f4f9.png" alt="Mobile Image 2" class="w-full h-full object-cover rounded-[41px]">
+  </div>
+</div>
+
+    
+
+    </section>
+    
+
+ <section class="relative py-20 px-5">
+  
+  <div class="absolute top-[110px] left-[70px] max-w-full w-[1380px] h-[1043px] rounded-[20px] overflow-hidden">
+    <!-- Background Image -->
+    <div class="relative w-full h-full ml-8 overflow-hidden rounded-[20px]">
+      <img src="/newtry.c93dfbe3.png" alt="Background Image" class="w-full h-auto object-cover sm:translate-x-[-30px] md:h-[400px] lg:h-[600px]">
+          
+      <div class="absolute inset-0 bg-[#08080A]"></div>
+
+      
+      <div class="absolute top-0 right-0 ml-4">
+        <img src="/group299.03d6b72e.png" alt="Top-Right Image" class="w-[238.8px] h-[253px] rounded-[8px] border-[8px] border-transparent">
+      </div>
+
+      <!-- Title, Description -->
+      <div class="absolute inset-0 flex flex-col items-center justify-start text-center mt-2">
+        <!-- Title -->
+        <h1 class="font-chivo font-semibold text-[52px] text-white leading-[58px] mt-[80px]">
+          Your Health Records, Fully <br> Managed
+        </h1>
+        <!-- Description -->
+        <p class="text-[#696969] font-chivo text-[17.05px] font-[400] mt-[1px]">
+          With Fasten Connect, you can access a variety of important records:
+        </p>
+            
+        <img src="/12341.6aad6a76.png" alt="Image Below Title" class="mt-[20px] w-auto max-w-[800px] rounded-[10px] border-[5px] border-[#696969] mx-auto hidden sm:block">
+      
+
+
+
+<div class="flex flex-col items-center justify-center space-y-2 mt-[10px] absolute top-[29%] left-[32%]">
+<!-- First Block (EHRs) -->
+<div class="flex items-center justify-center space-x-2 mt-[-2px]"> 
+  <!-- Image -->
+  <img src="/image1.a09bdb4a.png" alt="EHRs" class="w-[18px] h-[18px] rounded-[12px] border-[6px] border-[#696969] flex-shrink-0 hidden sm:block">
+  <!-- Text -->
+  <p class="text-[#000000] font-chivo font-medium text-[17px] leading-[16px] mt-0px font-weight-500 flex-shrink-0 flex items-center">
+    EHRs
+  </p>
+</div>
+</div>
+
+<!-- Section Boxes -->
+<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-12 px-4">
+  <!-- Section 1 -->
+  <div class="rounded-lg p-4">
+    <div class="flex flex-col ml-16">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Allergies
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        Records of harmful reactions to <br>
+        <span class="block ml-[-1px]">substances or allergens.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="rounded-lg p-4">
+    <div class="flex flex-col">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Medications
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        Prescribed medications with <br>
+        <span class="block ml-[-1px]">details on dosages and frequency.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="rounded-lg p-4">
+    <div class="flex flex-col">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Immunizations
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        A history of vaccinations<br>
+        <span class="block ml-[-1px]">administered by healthcare </span>
+        <span class="block ml-[-1px]">providers. </span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="rounded-lg p-4">
+    <div class="flex flex-col">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Labs
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        Your test results, tracking health<br>
+        <span class="block ml-[-1px]">status over time.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 5 (Second row) -->
+  <div class="rounded-lg p-4 ml-16">
+    <div class="flex flex-col">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Vitals
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        A summary of recurring health <br>
+        <span class="block ml-[-1px]">data like blood pressure.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 6 -->
+  <div class="rounded-lg p-4">
+    <div class="flex flex-col">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Clinical Notes
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        Notes from doctors, nurses, and<br>
+        <span class="block ml-[-1px]">other healthcare providers.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 7 -->
+  <div class="rounded-lg p-4">
+    <div class="flex flex-col">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Problems & Procedures
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        Findings from check-ups, exams, <br>
+        <span class="block ml-[-1px]">and medical treatments</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Section 8 -->
+  <div class="rounded-lg p-4">
+    <div class="flex flex-col">
+      <h2 class="text-[#D6D6D6] font-chivo font-medium text-[18px] leading-[21.42px] m-0 !text-left">
+        Care Team & Care Plan
+      </h2>
+      <p class="text-[#8A8A8A] font-chivo font-normal text-[16px] leading-[19.04px] m-0 !text-left pt-2">
+        Suggestions and next steps for <br>
+        <span class="block ml-[-1px]">your health journey.</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+</div></div></section>
+       
+<section class="py-20 px-5 bg-white-200 mt-40">
+</section>
+       
+       <section class="py-20 px-5 bg-white-200 mt-40">
+</section>
+       
+       <section class="py-20 px-5 bg-white-200 mt-40">
+</section>
+
+<section class="py-20 px-5 mt-28">
+  <div class="container mx-auto">
+    <div class="flex flex-col md:flex-row items-center">
+  
+    <div class="relative w-full md:w-1/2 flex justify-center items-center md:block hidden" style="transform: translateX(50px)">
+      
+  <div style="z-index: -1; background: linear-gradient(#6944ba66 0%, #31207200 100%); border-radius: 22.24px; width: 577px; height: 369px; position: absolute; top: -110px; left: 39px; box-shadow: .76px 1.53px #0000000a"></div>
+  <div style="z-index: -1; background: linear-gradient(-180deg, #6944ba66 0%, #31207200 100%); border-radius: 22.24px; width: 287px; height: 438px; position: absolute; top: -170px; left: 70px; box-shadow: .76px 1.53px #0000000a"></div>
+
+  <!-- First Image -->
+  <img src="/mobone.a6cc3771.png" alt="Mobile One" class="absolute" style="border-radius: 45.98px; width: 282.44px; height: 576px; top: -259px; left: 88px">
+  
+  <!-- Second Image -->
+  <img src="/mobtwo.5af6f4f9.png" alt="Mobile Two" class="absolute" style="border-radius: 41px; width: 258px; height: 524px; top: -329px; left: 398.44px">
+</div>
+
+           <!-- Right Section -->
+<div class="w-full md:w-1/2 text-left ml-48" style="position: relative">
+  <!-- Title -->
+  <h2 class="text-3xl md:text-4xl font-semibold" style="color: #000; letter-spacing: -.02em; width: 451px; height: 52px; font-family: Chivo, sans-serif; font-size: 50px; font-weight: 600; line-height: 62px">
+  Easy Data Sharing
+  </h2>
+
+  <!-- Points -->
+  <div class="mt-6 space-y-2">
+    <!-- Point 1 -->
+    <div class="flex items-center gap-6">
+      <div class="flex-shrink-0" style="background-color: #6241d4; background-image: url(&quot;speedimage.f730d49e.png&quot;); background-position: center; background-repeat: no-repeat; background-size: 80%; border-radius: 3.28px; width: 44px; height: 44.66px; transform: translateY(-10px)"></div>
+
+      <div>
+        <h3 class="font-medium" style="color: #3d3d3d; width: 259px; height: 21px; font-family: Chivo, sans-serif; font-size: 18px; font-weight: 500; line-height: 34.42px">
+          Smart Sharing
+        </h3>
+        <p class="text-sm" style="color: #646464; width: 377px; height: 38px; font-family: Chivo, sans-serif; font-size: 16px; font-weight: 400; line-height: 19.04px; transform: translateY(-5px)">
+          Share health records securely with doctors, schools, or family.
+        </p>
+      </div>
+    </div>
+
+    <!-- Point 2 -->
+    <div class="flex items-center gap-6">
+      <div class="flex-shrink-0" style="background-color: #6241d4; background-image: url(&quot;speedimage.f730d49e.png&quot;); background-position: center; background-repeat: no-repeat; background-size: 80%; border-radius: 3.28px; width: 44px; height: 44.66px; transform: translateY(-10px)"></div>
+
+      <div>
+        <h3 class="font-medium" style="color: #3d3d3d; width: 259px; height: 21px; font-family: Chivo, sans-serif; font-size: 18px; font-weight: 500; line-height: 34.42px">
+          Send a Private Link
+        </h3>
+        <p class="text-sm" style="color: #646464; width: 377px; height: 38px; font-family: Chivo, sans-serif; font-size: 16px; font-weight: 400; line-height: 19.04px; transform: translateY(-5px)">
+          Share temporary access to your data with trusted contacts.
+        </p>
+      </div>
+    </div>
+
+    <!-- Point 3 -->
+    <div class="flex items-center gap-6">
+      <div class="flex-shrink-0" style="background-color: #6241d4; background-image: url(&quot;speedimage.f730d49e.png&quot;); background-position: center; background-repeat: no-repeat; background-size: 80%; border-radius: 3.28px; width: 44px; height: 44.66px; transform: translateY(-10px)"></div>
+
+      <div>
+        <h3 class="font-medium" style="color: #3d3d3d; width: 259px; height: 21px; font-family: Chivo, sans-serif; font-size: 18px; font-weight: 500; line-height: 34.42px">
+          Download PDF
+        </h3>
+        <p class="text-sm" style="color: #646464; width: 377px; height: 38px; font-family: Chivo, sans-serif; font-size: 16px; font-weight: 400; line-height: 19.04px; transform: translateY(-5px)">
+          Get a consolidated PDF of your records to share with your care team.
+        </p>
+      </div>
+    </div>
+
+    <!-- Point 4 -->
+    <div class="flex items-center gap-6">
+      <div class="flex-shrink-0" style="background-color: #6241d4; background-image: url(&quot;speedimage.f730d49e.png&quot;); background-position: center; background-repeat: no-repeat; background-size: 80%; border-radius: 3.28px; width: 44px; height: 44.66px; transform: translateY(-10px)"></div>
+
+      <div>
+        <h3 class="font-medium" style="color: #3d3d3d; width: 259px; height: 21px; font-family: Chivo, sans-serif; font-size: 18px; font-weight: 500; line-height: 34.42px">
+          Add to iOS Wallet
+        </h3>
+        <p class="text-sm" style="color: #646464; width: 377px; height: 38px; font-family: Chivo, sans-serif; font-size: 16px; font-weight: 400; line-height: 19.04px; transform: translateY(-5px)">
+          Store vaccination records on your iPhone for easy access.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+
+     <section class="self-stretch flex flex-row items-start justify-start py-0 px-[30px] box-border max-w-full text-center text-33xl text-black font-website-body-body-large-regular mt-[-20px] md:mt-24">
+          <div class="flex-1 rounded-xl bg-blueviolet-200 overflow-hidden flex flex-col items-start justify-start py-[91px] px-[142px] box-border max-w-full mq750:pl-[35px] mq750:pr-[35px] mq750:box-border mq1225:pl-[71px] mq1225:pr-[71px] mq1225:box-border">
+            <div class="self-stretch flex flex-col items-center justify-start gap-[60px] max-w-full mq1225:gap-[30px]">
+              <h1 class="m-0 self-stretch relative text-inherit leading-[58px] font-semibold font-[inherit] mq750:text-23xl mq750:leading-[46px] mq450:text-12xl mq450:leading-[35px]" id="whoWeServeHeading">
+                Who We Serve
+              </h1>
+              <div class="flex items-center justify-between gap-5 w-[887px] max-w-full text-left text-lg custom-container">
+                <div class="flex items-center justify-start gap-4">
+                  <img class="h-7 w-7 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/image.a42e6fec.svg">
+                  <div class="relative">Patients</div>
+                </div>
+                <div class="flex items-center justify-start gap-4">
+                  <img class="h-7 w-7 relative overflow-hidden shrink-0 object-cover" alt="" src="/image-1-1@2x.3d9eb63c.png">
+                  <div class="relative inline-block min-w-[62px]">Payers</div>
+                </div>
+                <div class="flex items-center justify-start gap-4">
+                  <img class="h-7 w-7 relative overflow-hidden shrink-0" alt="" src="/image-2-1.f8c0687a.svg">
+                  <div class="relative">Providers</div>
+                </div>
+                <div class="flex items-center justify-start gap-4">
+                  <img class="h-7 w-7 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/image-3.44da13b8.svg">
+                  <div class="relative inline-block min-w-[99px]">Developers</div>
+                </div>
+                <div class="flex items-center justify-start gap-4">
+                  <img class="h-7 w-7 relative overflow-hidden shrink-0" loading="lazy" alt="" src="/image-5.9e664534.svg">
+                  <div class="relative">Researchers</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="flex flex-col md:flex-row justify-between items-start py-8 px-4 bg-white mt-[-20px] md:mt-24">
+          
+          <div class="flex flex-col w-full md:w-[547px] space-y-6 ml-0 md:ml-20">
+           
+            <h1 class="font-[Chivo] font-semibold text-[40px] md:text-[52px] leading-[50px] md:leading-[62px] text-black tracking-[-0.02em]">
+              Why Choose Fasten Connect?
+            </h1>
+        
+            <div>
+             
+              <div class="flex items-start gap-4 -mt-6 md:-mt-12">
+                <div class="w-[30px] h-[31px] bg-[#6241D4] rounded-full flex items-center justify-center mt-2">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="white" class="w-[22px] h-[22px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-[Chivo] font-medium text-[18px] leading-[21.42px] text-[#3D3D3D] w-full md:w-[466px]">
+                    Instant Access
+                  </h3>
+                  <p class="font-[Chivo] font-normal text-[16px] leading-[19.04px] text-[#646464] w-full md:w-[466px] mt-1">
+                    Access your records in real time from 30,000+ healthcare systems
+                  </p>
+                </div>
+              </div>
+        
+            
+              <div class="flex items-start gap-4 mt-4 md:mt-6">
+                <div class="w-[30px] h-[31px] bg-[#6241D4] rounded-full flex items-center justify-center mt-2">
+                 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="white" class="w-[22px] h-[22px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-[Chivo] font-medium text-[18px] leading-[21.42px] text-[#3D3D3D] w-full md:w-[466px]">
+                    Security & Compliance
+                  </h3>
+                  <p class="font-[Chivo] font-normal text-[16px] leading-[19.04px] text-[#646464] w-full md:w-[466px] mt-1">
+                    HIPAA-compliant and secure, making sure your data is protected.
+                  </p>
+                </div>
+              </div>
+        
+              
+              <div class="flex items-start gap-4 mt-4 md:mt-6">
+                <div class="w-[30px] h-[31px] bg-[#6241D4] rounded-full flex items-center justify-center mt-2">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="white" class="w-[22px] h-[22px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-[Chivo] font-medium text-[18px] leading-[21.42px] text-[#3D3D3D] w-full md:w-[466px]">
+                    Total Control
+                  </h3>
+                  <p class="font-[Chivo] font-normal text-[16px] leading-[19.04px] text-[#646464] w-full md:w-[466px] mt-1">
+                    You decide who gets access to your data, when and where.
+                  </p>
+                </div>
+              </div>
+        
+              
+              <div class="flex items-start gap-4 mt-4 md:mt-6">
+                <div class="w-[30px] h-[31px] bg-[#6241D4] rounded-full flex items-center justify-center mt-2">
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="white" class="w-[22px] h-[22px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-[Chivo] font-medium text-[18px] leading-[21.42px] text-[#3D3D3D] w-full md:w-[466px]">
+                    Family-Friendly
+                  </h3>
+                  <p class="font-[Chivo] font-normal text-[16px] leading-[19.04px] text-[#646464] w-full md:w-[466px] mt-1">
+                    Manage your loved ones' health data alongside your own.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+         
+          <div class="w-full md:w-[610px] h-full flex-shrink-0 flex items-center justify-center mr-24 hidden lg:block">
+            <img src="/clippathgroup.f7271855.png" alt="Right Side Image" class="w-full h-565px object-cover">
+          </div>
+        </section>
+        
+        
+        <section class="mt-10 flex flex-row items-start justify-start py-0 pl-[15px] pr- sm:pl-[30px] sm:pr-8 box-border max-w-full text-center text-29xl text-neutral-100 font-website-body-body-large-regular md:mt-24 ">
+  <div class="h-[339px] w-full sm:w-[800px] md:w-[1200px] lg:w-[1500px] rounded-xl bg-gray-600 overflow-hidden shrink-0 flex flex-row items-start justify-start relative max-w-full z-[1] mx-auto">
+    
+    <img class="h-full w-full absolute object-cover top-0 left-0" alt="" src="/image-2-2@2x.26cff42a.png">
+
+  
+    <div class="flex flex-col items-center justify-center gap-6 w-full h-full px-4 sm:px-8 sm:mb-2">
+      
+      <div class="w-full flex flex-col items-center justify-center gap-4 max-w-full shrink-0">
+        <h1 class="m-0 text-center text-inherit tracking-[-0.5px] font-bold z-[2] text-lg sm:text-xl md:text-3xl lg:text-4xl">
+          Get Started Today
+        </h1>
+        <div class="relative text-sm leading-6 sm:text-base md:text-lg text-center z-[2] max-w-[90%] sm:max-w-[70%] lg:max-w-[800px]">
+          Take control of your healthcare data with Fasten Connect. Simplify
+          the way you manage and share your health information—all in one
+          secure platform.
+        </div>
+      </div>
+
+     
+      <div class="w-full flex items-center justify-center px-4 sm:px-8">
+        <button class="cursor-pointer border-none py-3 px-6 sm:px-8 md:px-10 bg-mediumslateblue-200 rounded-md flex items-center justify-center z-[2] hover:bg-mediumslateblue-100 text-sm sm:text-base md:text-lg">
+          <div class="text-neutral-100 text-center font-medium">
+            Start Managing Your Health Records
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="w-full relative bg-neutral-100 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+      
+      
+      
+    <img class="self-stretch relative max-w-full overflow-hidden max-h-full object-cover shrink-0 mt-[-82.7px] lg:mt-[10px] hidden lg:block" alt="" src="/image-1-12@2x.407233c2.png">
+  <footer class="self-stretch shadow-[0px_-5px_47px_rgba(0,_0,_0,_0.11)] bg-neutral-100 flex flex-col items-start justify-start pt-[70.7px] px-[100px] pb-[30.3px] box-border gap-[97.3px] shrink-0 max-w-full z-[1] mt-[12.7px] lg:mt-[-230px] text-left text-lg text-darkslategray-100 font-website-body-body-large-regular">
+
+
+    <div class="w-full flex flex-col md:flex-row items-start justify-between gap-5 md:gap-10">
+      <div class="w-full md:w-[380px] flex flex-col items-start justify-start gap-[36.4px] max-w-full">
+        <div class="self-stretch flex flex-col items-start justify-start gap-[12.3px]">
+          <img class="w-[206px] h-[67px] relative object-cover" alt="" src="/image-1-22@2x.ec97dbe3.png">
+          <div class="relative leading-[26px]">
+            Fasten Connect is a secure, real-time healthcare data sharing platform for providers and patients.
+          </div>
+        </div>
+        <div class="flex flex-row items-start justify-start py-0 px-[11px]">
+          <div class="w-[28.3px] flex flex-row items-start justify-start gap-3">
+            <img class="h-[28.3px] w-[28.3px] relative" loading="lazy" alt="" src="/vector.3aa09ad4.svg">
+            <img class="h-[26.9px] w-[26.9px] relative" alt="" src="/vector-1.9d54aa21.svg">
+            <img class="h-[28.3px] w-[28.3px] relative" alt="" src="/vector-2.8d81676b.svg">
+            <img class="h-[26.9px] w-[26.9px] relative" alt="" src="/vector-3.449d1002.svg">
+          </div>
+        </div>
+      </div>
+  
+      <div class="flex flex-col md:flex-row items-start justify-between gap-[46px] text-lgi-4 text-gray-1200 mr-24">
+        <div class="flex flex-col items-start justify-start gap-[25px]">
+          <b class="relative text-base-7 leading-[23.7px] text-gray-500">Company</b>
+          <div class="relative leading-[27.1px]">About</div>
+          <div class="relative leading-[27.1px] inline-block min-w-[78px]">Careers</div>
+          <div class="relative leading-[27.1px] inline-block min-w-[126px]">Brand Center</div>
+          <div class="relative leading-[27.1px] inline-block min-w-[42px]">Blog</div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[25px]">
+          <b class="relative text-base-7 leading-[23.7px] inline-block text-gray-500 min-w-[90px]">Help center</b>
+          <div class="relative leading-[27.1px]">Discord Server</div>
+          <div class="relative leading-[27.1px]">Reddit</div>
+          <div class="relative leading-[27.1px]">GitHub</div>
+          <div class="relative leading-[27.1px]">Contact</div>
+        </div>
+        <div class="w-[146px] flex flex-col items-start justify-start gap-8 text-base-7 text-gray-500">
+          <b class="relative leading-[23.7px] inline-block min-w-[43px]">Legal</b>
+          <div class="self-stretch flex flex-col items-start justify-start py-0 pl-0 pr-[15px] gap-8 text-right text-lgi text-dimgray-300">
+            <div class="self-stretch relative tracking-[0.2px] leading-[19px]">Privacy Policy</div>
+            <div class="relative tracking-[0.2px] leading-[19px]">Terms</div>
+            <div class="w-[104px] relative text-lg tracking-[0.2px] leading-[19px] flex items-center">Compliance</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[25px]">
+          <b class="relative text-base-7 leading-[23.7px] inline-block text-gray-500 min-w-[78px]">Download</b>
+          <div class="relative leading-[27.1px] inline-block min-w-[76px]">Window</div>
+          <div class="relative leading-[27.1px]">MacOS</div>
+          <div class="relative leading-[27.1px]">Docker</div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="self-stretch flex flex-col items-start justify-start gap-[32.7px] text-xl text-black font-space-grotesk">
+      <div class="self-stretch h-px relative border-darkgray border-t-[1px] border-solid box-border"></div>
+      <div class="self-stretch flex flex-row items-start justify-start py-0 px-4 sm:px-18 md:px-[411px] shrink-0">
+        <div class="relative leading-[24px] text-center">© 2022 Fasten Health™. All Rights Reserved.</div>
+      </div>
+    </div>
+  
+  </footer>
+  </div>
+  
+
+      
+<style>@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: 20s linear infinite marquee;
+  display: flex;
+}
+
+.marquee-content {
+  flex-flow: row;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.marquee-content img {
+  object-fit: contain;
+  height: 100%;
+}
+</style>
+      
+      
+  <script src="/resources-page.163c336f.js"></script></body>
+</html>
+
+
+  

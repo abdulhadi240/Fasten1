@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="/about-page.689f5f05.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="/index.672d4772.js"></script>
+
+    <link rel="stylesheet" href="/index.81575373.css">
+
+    <style>@media (width <= 1024px) {
+  h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (width <= 767px) {
+  h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+</style>
+  </head>
+  <body>
+    <div class="mt-4 w-full relative bg-neutral-100 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
+      <section class="mt-4 self-stretch flex flex-row items-start justify-start py-0 px-[30px] box-border max-w-full text-left text-base text-silver-200 font-website-body-body-large-regular">
+        <div class="flex-1 flex flex-col items-start justify-start gap-[3px] max-w-full">
+          <header class="self-stretch flex flex-row items-center justify-between py-4 px-[70px] box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 mq1400:pl-[35px] mq1400:pr-[35px] mq1400:box-border">
+            <div class="flex items-center sm:ml-0 ml-[-35px]">
+              <img class="h-11 object-cover" loading="lazy" alt="Logo" src="/image-1@2x.678ae692.png">
+            </div>
+
+            <!-- Navigation Links (Desktop Only) -->
+            <nav class="hidden md:flex flex-row items-center gap-8 relative">
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="#">Home</a>
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="#">About</a>
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="#">Patients</a>
+
+              <!-- Dropdown Menu -->
+              <div class="relative group">
+                <button class="[text-decoration:none] font-medium text-midnightblue flex items-center gap-1">
+                  How It Works
+                  <svg class="w-4 h-4 transform group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div class="absolute hidden group-hover:block top-full left-0 bg-white shadow-md rounded mt-2 w-48 z-50">
+                  <a href="#" class="block px-4 py-2 text-midnightblue hover:bg-gray-100">
+                    Item 1
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-midnightblue hover:bg-gray-100">
+                    Item 2
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-midnightblue hover:bg-gray-100">
+                    Item 3
+                  </a>
+                </div>
+              </div>
+
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="#">FAQs</a>
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="#">For Business</a>
+            </nav>
+
+            <!-- Login and Sign-Up Section -->
+            <div class="hidden md:flex flex-row items-center gap-5">
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="#">Login</a>
+              <button class="cursor-pointer [border:none] py-2 px-6 bg-mediumslateblue-200 rounded hover:bg-mediumslateblue-100">
+                <span class="text-white font-medium">Sign Up</span>
+              </button>
+            </div>
+            <!-- Hamburger Menu (Mobile Only) -->
+            <button id="menu-toggle" class="md:hidden flex items-center justify-center text-midnightblue absolute right-1 top-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50">
+              <a href="#" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                Home
+              </a>
+              <a href="#" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                About
+              </a>
+              <a href="#" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                Patients
+              </a>
+              <div class="relative">
+                <button id="submenu-toggle" class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                  How It Works
+                  <svg id="submenu-icon" class="w-4 h-4 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </button>
+                <div id="how-it-works-submenu" class="hidden flex-col bg-white shadow-md w-full mt-1">
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                    Item 1
+                  </a>
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                    Item 2
+                  </a>
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                    Item 3
+                  </a>
+                </div>
+              </div>
+              <a href="#" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                FAQs
+              </a>
+              <a href="#" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
+                For Business
+              </a>
+
+              <div class="w-full flex flex-col items-stretch gap-4 mt-4 px-6">
+                <a href="#" class="text-midnightblue font-medium text-center py-2 border border-midnightblue rounded hover:bg-gray-100 transition-colors">
+                  Login
+                </a>
+                <button class="bg-mediumslateblue-200 text-white font-medium text-center py-2 rounded hover:bg-mediumslateblue-100 transition-colors">
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </header>
+
+          <div class="self-stretch h-[841px] relative max-w-full">
+            <div class="absolute top-[27px] left-0 rounded-xl bg-blueviolet-100 w-full h-[814px] overflow-hidden max-w-full">
+              <!-- Background Image (remains full width and height for all screens) -->
+              <img class="absolute top-0 left-0 w-full h-full object-cover" alt="" src="/image-21@2x.ce8339f7.png">
+
+              <!-- Shadow Image (visible only on larger screens, no change) -->
+              <img class="absolute top-[119px] left-[567px] w-[1110.5px] h-[624.7px] object-cover" alt="" src="/shadow@2x.ddfef9f4.png">
+
+              <!-- Main Image (No change for desktop, responsive for mobile/tablets) -->
+              <img class="absolute top-[84px] left-[293.5px] w-[1335.4px] h-[710px] object-cover z-[1] lg:block hidden lg:w-[100%] lg:h-auto" loading="lazy" alt="" src="/197629941-d608c2d4f3e34776921b720e7484b590-1@2x.327b4f37.png">
+
+              <!-- Hidden Text (Only visible on larger screens, no change) -->
+              <i class="absolute top-[527px] left-[71px] leading-[150%] inline-block w-[446px] h-6 z-[2] hidden lg:block">
+                *we will not disseminate your email and so you avoid spam
+              </i>
+
+              <!-- Form Container (Does not change for desktop, adjusted for mobile/tablets only) -->
+              <div class="absolute top-[449px] left-[71px] rounded-md bg-gray-700 w-[480px] flex flex-row items-start justify-start max-w-full z-[2] text-center sm:left-[20px] sm:top-[500px] lg:left-[71px] lg:top-[449px]">
+                <div class="flex-1 rounded-md bg-neutral-100 border-silver-200 border-[1px] border-solid box-border flex flex-row items-start justify-between py-1.5 pl-[23px] pr-[9px] min-h-[66px] max-w-full gap-5">
+                  <div class="flex flex-col items-start justify-start pt-3 px-0 pb-0 w-full">
+                    <input class="self-stretch relative leading-[26px] border-0 ring-offset-0" placeholder="Your business email">
+                  </div>
+                  <button class="cursor-pointer [border:none] py-[15px] px-[30px] bg-mediumslateblue-200 rounded-md flex flex-row items-start justify-start z-[1] hover:bg-mediumslateblue-100">
+                    <div class="flex-1 relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center inline-block min-w-[90px]">
+                      Get Started
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Description Text (remains the same, only adjusts on smaller screens) -->
+              <div class="absolute top-[322px] left-[71px] text-lg leading-[28px] text-silver-100 inline-block w-[546px] z-[2]">
+                Fasten Connect provides a unified API for accessing medical
+                records from multiple institutions. Our platform lets developers
+                build applications with access to patient health data in
+                minutes.
+              </div>
+
+              <!-- Heading (adjusts for smaller screens but remains large on desktop) -->
+              <h1 class="m-0 absolute top-[186px] left-[71px] text-33xl leading-[58px] font-semibold font-[inherit] text-neutral-100 inline-block w-[537px] h-[116px] z-[2]">
+                <p class="m-0">A Unified Medical</p>
+                <p class="m-0">Record API</p>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-14 self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full shrink-0 text-center text-xl text-gray-200 font-website-body-body-large-regular">
+        <div class="w-[1240px] flex flex-col items-start justify-start gap-[100px] max-w-full mq450:gap-[25px] mq825:gap-[50px]">
+          <div class="self-stretch flex flex-col items-start justify-start gap-[35px] max-w-full mq825:gap-[17px]">
+            <div class="w-full text-black font-medium leading-[30px] text-lg md:text-xl">
+              With connections to the largest health systems & payers, like:
+            </div>
+            <div class="marquee-content flex gap-4 items-center animate-marquee w-full flex-nowrap sm:flex-wrap sm:justify-start">
+              <!-- Example Image Wrapper -->
+              <div class="relative h-8 w-full sm:w-36 md:w-48 flex-shrink-0">
+                <img class="absolute inset-0 w-full h-full object-contain" loading="lazy" alt="Example Image 1" src="/image-31@2x.1575da50.png">
+              </div>
+
+              <!-- Repeatable Image Block -->
+              <div class="relative h-8 w-full sm:w-36 md:w-48 flex-shrink-0">
+                <img class="absolute inset-0 w-full h-full object-contain" loading="lazy" alt="Example Image 2" src="/image-31@2x.1575da50.png">
+              </div>
+
+              <!-- Additional Content -->
+              <div class="w-full h-12 sm:w-32 md:w-40 flex items-center justify-center flex-shrink-0">
+                <img class="w-full h-auto object-contain" loading="lazy" alt="Additional Image 1" src="/image-4@2x.26eb2871.png">
+              </div>
+              <div class="w-full h-10 sm:w-28 md:w-36 flex items-center justify-center flex-shrink-0">
+                <img class="w-full h-auto object-contain" loading="lazy" alt="Additional Image 2" src="/image-7@2x.5c90ae14.png">
+              </div>
+              <div class="w-full h-10 sm:w-28 md:w-36 flex items-center justify-center flex-shrink-0">
+                <img class="w-full h-auto object-contain" loading="lazy" alt="Additional Image 3" src="/svg9768.f609e2a8.svg">
+              </div>
+
+              <!-- Responsive Adjustments -->
+              <div class="flex flex-row flex-wrap justify-start gap-6">
+                <div class="w-12 h-12 sm:w-16 md:h-16 flex-shrink-0 flex items-center justify-center">
+                  <img class="w-full h-full object-contain" loading="lazy" alt="Small Icon 1" src="/shape-1.5aa3e9b2.svg">
+                </div>
+                <div class="w-full h-8 sm:w-32 md:w-40 flex-shrink-0 flex items-center justify-center">
+                  <img class="w-full h-auto object-contain" loading="lazy" alt="Small Icon 2" src="/image-51@2x.a748fb5c.png">
+
+                  <div class="absolute top-[49px] left-[286px] [background:linear-gradient(90deg,_#fff,_rgba(255,_255,_255,_0))] w-full h-full [transform:_rotate(180deg)] [transform-origin:0_0] z-[1]"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-2 flex flex-row items-start justify-between gap-8 max-w-full text-left text-dimgray-100">
+            <!-- Left Section: Text Content -->
+            <div class="flex-1 flex flex-col items-start justify-start gap-6">
+              <h1 class="text-33xl font-semibold text-black leading-[62px] mq450:text-23xl mq450:leading-[37px]">
+                Seamless User Experience
+              </h1>
+              <p class="leading-7">
+                Fasten Connect makes it easy for users to share their medical
+                records securely and quickly, letting you focus on building your
+                application.
+              </p>
+              <div class="flex flex-row items-start gap-4">
+                <!-- Icons -->
+                <div class="flex flex-col gap-3">
+                  <img class="w-5 h-5" src="/frame-9.94f5f559.svg" alt="Icon">
+                  <img class="w-5 h-5" src="/frame-9.94f5f559.svg" alt="Icon">
+                  <img class="w-5 h-5" src="/frame-9.94f5f559.svg" alt="Icon">
+                  <img class="w-5 h-5" src="/frame-9.94f5f559.svg" alt="Icon">
+                </div>
+                <!-- Text List -->
+                <div class="leading-7">
+                  <p>Instant account connection</p>
+                  <p>Native FHIR Exports</p>
+                  <p>Patient empowered data sharing</p>
+                  <p>HIPAA compliant</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Section: Image -->
+            <div class="hidden md:flex items-center justify-center flex-1 max-w-[500px] relative">
+              <div class="relative">
+                <!-- Gradient 1 -->
+                <div class="absolute bottom-[-30px] right-[-40px] shadow-lg rounded-3xl w-[287px] h-[438px] bg-gradient-to-b from-[#6944BA66] to-[#31207200]"></div>
+                <!-- Gradient 2 -->
+                <div class="absolute bottom-[-30px] right-[-78px] shadow-lg rounded-3xl w-[400px] h-[300px] bg-gradient-to-b from-[#6944BA66] to-[#31207200]"></div>
+                <!-- Image -->
+                <img class="relative rounded-3xl w-full max-w-[574px] h-auto object-cover z-10" src="/frame-9-2@2x.da8d8b48.png" alt="Fasten Connect">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-24 self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full shrink-0 text-left text-33xl text-black font-website-body-body-large-regular">
+        <div class="w-[1240px] flex flex-row items-start justify-center gap-[71px] max-w-full lg:flex-wrap mq450:gap-[18px] mq825:gap-[35px]">
+          <!-- Left Content: Image Section -->
+          <div class="flex-1 flex flex-row items-start justify-start min-w-[404px] max-w-full mq825:min-w-full hidden md:flex">
+            <div class="h-[487px] flex-1 relative max-w-full">
+              <!-- Gradient 1 -->
+              <div class="absolute top-[0px] left-[27px] shadow-[0.8px_1.5px_28.2px_rgba(0,_0,_0,_0.04)] rounded-3xl-2 [background:linear-gradient(180deg,_rgba(105,_68,_186,_0.4),_rgba(49,_32,_114,_0))] w-[287px] h-[438px] overflow-hidden"></div>
+              <!-- Gradient 2 -->
+              <div class="absolute top-[118px] left-[0px] shadow-[0.8px_1.5px_28.2px_rgba(0,_0,_0,_0.04)] rounded-3xl-2 [background:linear-gradient(90deg,_rgba(105,_68,_186,_0.4),_rgba(49,_32,_114,_0))] w-[577px] h-[369px] overflow-hidden z-[1]"></div>
+              <!-- Image -->
+              <img class="absolute top-[27px] left-[48px] rounded-6xl w-[574px] h-[432px] overflow-hidden object-cover z-[2]" alt="" src="/frame-9-3@2x.fceb6e50.png">
+            </div>
+          </div>
+
+          <!-- Right Content: Text Section -->
+          <div class="w-[547px] flex flex-col items-start justify-start pt-[59px] px-0 pb-0 box-border max-w-full lg:flex-1 mq450:pt-[38px] mq450:box-border mq825:min-w-full">
+            <div class="self-stretch flex flex-col items-start justify-start gap-[22px] max-w-full">
+              <!-- Header -->
+              <div class="self-stretch flex flex-col items-start justify-start max-w-full">
+                <div class="self-stretch flex flex-col items-start justify-start py-px pl-0 pr-5 box-border gap-4 max-w-full">
+                  <h1 class="m-0 relative text-inherit tracking-[-0.02em] leading-[62px] font-semibold font-[inherit] inline-block max-w-full mq450:text-12xl mq450:leading-[37px] mq825:text-23xl mq825:leading-[50px]">
+                    Built for Developers
+                  </h1>
+
+                  <div class="relative text-mid leading-[27.9px] text-dimgray-100">
+                    Fasten Connect gives developers the tools they need to
+                    create easy and accessible user experiences. With just a few
+                    lines of code, your patients can share records from more
+                    than 27,000 healthcare institutions.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Features List -->
+              <div class="flex flex-col items-start justify-start text-mid text-dimgray-100">
+                <div class="flex flex-row items-center justify-start gap-3">
+                  <div class="flex flex-col items-start justify-start gap-[19px]">
+                    <img class="w-[19px] h-[19px] relative" alt="" src="/frame-9.94f5f559.svg">
+                    <img class="w-[19px] h-[19px] relative" alt="" src="/frame-9.94f5f559.svg">
+                    <img class="w-[19px] h-[19px] relative" alt="" src="/frame-9.94f5f559.svg">
+                    <img class="w-[19px] h-[19px] relative" alt="" src="/frame-9.94f5f559.svg">
+                  </div>
+                  <div class="relative leading-[38.8px] font-light">
+                    <p class="m-0">Robust documentation</p>
+                    <p class="m-0">Javascript SDK</p>
+                    <p class="m-0">API-First Design</p>
+                    <p class="m-0">World-class support</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-24 self-stretch h-[1043px] flex flex-row items-start justify-start py-0 px-[90px] box-border max-w-full text-center text-33xl text-neutral-100 font-website-body-body-large-regular">
+        <div class="h-[1043px] w-[1380px] [backdrop-filter:blur(405px)] rounded-xl bg-gray-600 overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[678px] px-[264px] pb-[443px] box-border relative gap-[78px] lg:pt-[678px] lg:px-[264px] lg:pb-[443px] lg:gap-[78px] md:pt-[287px] md:px-[132px] md:pb-[187px] md:gap-[39px] sm:pt-[150px] sm:px-[30px] sm:pb-[100px] sm:gap-[20px]" style="margin-left: 2px">
+          <!-- Background Image -->
+          <img class="absolute top-0 left-0 w-full h-full object-cover bg-[#08080A] opacity-80" alt="Background" src="/image-2-12@2x.427e326e.png">
+
+          <div class="mt-[-816.5px] w-[1141px] h-[738.5px] flex flex-row items-start justify-start pt-[230.5px] px-[68px] pb-[230px] box-border relative min-h-[739px] shrink-0 max-w-[134%] lg:pl-[34px] lg:pr-[34px] lg:box-border mq825:pt-[150px] mq825:pb-[149px] mq825:box-border">
+            <div class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]">
+              <img class="hidden lg:block absolute top-[0px] left-[800px] w-[341px] h-[361.3px] object-contain mix-blend-color-dodge z-[1]" loading="lazy" alt="" src="/group-299@2x.eb0a3f2a.png">
+              <img class="hidden lg:block absolute top-[344.5px] left-[0px] w-[853px] h-[394px] object-cover z-[2]" alt="" src="/1234-1@2x.d11fb50c.png">
+            </div>
+            <h1 class="m-0 w-[717px] relative text-inherit leading-[58px] font-semibold font-[inherit] inline-block shrink-0 max-w-full z-[1] mq450:text-12xl mq450:leading-[35px] mq825:text-23xl mq825:leading-[46px]">
+              Getting Started with Fasten Connect
+            </h1>
+          </div>
+
+          <div class="ml-[-294px] flex flex-row items-start justify-start py-0 pl-[304px] pr-0 box-border gap-[7px] shrink-0 max-w-[134%] text-left text-lgi-1 text-mediumpurple lg:pl-[152px] lg:box-border mq450:pl-5 mq450:box-border mq825:pl-[76px] mq825:box-border mq1400:flex-wrap mq1400:justify-center">
+            <div class="ml-[-348px] flex flex-col items-start justify-start pt-[121.7px] px-0 pb-0 box-border max-w-full mq825:pt-[79px] mq825:box-border mq1400:flex-1 mq1400:min-w-full">
+              <img class="hidden lg:block w-[341px] relative max-h-full mix-blend-color-dodge shrink-0 z-[1] mq1400:self-stretch mq1400:w-auto" alt="" src="/group-301.729787d7.svg">
+            </div>
+
+            <div class="flex flex-col items-start justify-start gap-[74px] shrink-0 max-w-full lg:gap-[37px] mq450:gap-[18px] mq1400:flex-1 mq1400:min-w-full ml-36">
+              <div class="self-stretch flex-1 flex flex-row items-center justify-start gap-[110px] z-[1] lg:gap-[55px] lg:flex-wrap mq450:gap-[27px] translate-x-20">
+                <div class="self-stretch w-[204px] overflow-hidden shrink-0 flex flex-col items-start justify-start gap-3.5">
+                  <div class="flex-1 rounded-xl-5 bg-lavender border-gray-1000 border-[0.3px] border-solid flex flex-col items-center justify-center py-2.5 px-2">
+                    <div class="relative leading-[19.1px] font-medium">01</div>
+                  </div>
+                  <div class="relative text-xl leading-[20px] font-medium text-neutral-100 mq450:text-base mq450:leading-[16px]">
+                    Sign Up for Fasten Connect
+                  </div>
+                  <div class="relative text-base leading-[20px] font-light text-silver-100">
+                    Register on our Developer mode to get started.
+                  </div>
+                </div>
+                <div class="w-[204px] overflow-hidden shrink-0 flex flex-col items-start justify-start gap-3.5">
+                  <div class="rounded-xl-5 bg-lavender border-gray-1000 border-[0.3px] border-solid flex flex-col items-center justify-center py-2.5 px-2">
+                    <div class="relative leading-[19.1px] font-medium">02</div>
+                  </div>
+                  <div class="relative text-xl leading-[20px] font-medium text-neutral-100 inline-block min-w-[123px] mq450:text-base mq450:leading-[16px]">
+                    Get API Keys
+                  </div>
+                  <div class="relative text-base leading-[20px] font-light text-silver-100">
+                    Access your credentials and connect to our endpoint
+                    directory.
+                  </div>
+                </div>
+                <div class="flex-1 flex flex-row items-center justify-center">
+                  <div class="flex-1 flex flex-col items-start justify-start gap-3.5">
+                    <div class="rounded-xl-5 bg-lavender border-gray-1000 border-[0.3px] border-solid flex flex-col items-center justify-center py-2.5 px-2">
+                      <div class="relative leading-[19.1px] font-medium">
+                        03
+                      </div>
+                    </div>
+                    <div class="relative text-xl leading-[20px] font-medium text-neutral-100 mq450:text-base mq450:leading-[16px]">
+                      Integrate Securely
+                    </div>
+                    <div class="w-[204px] relative text-base leading-[20px] font-light text-silver-100 flex items-center">
+                      Embed our iframe or code for fast, HIPAA-compliant
+                      data-sharing.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="cursor-pointer [border:none] py-0 bg-[transparent] self-stretch flex flex-row items-start justify-start mq450:pl-5 mq450:pr-5 mq450:box-border ml-80">
+                <div class="rounded-md bg-mediumslateblue-200 flex flex-row items-center justify-center py-[10px] px-6 z-[1]">
+                  <div class="relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center">
+                    Book Demo
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-14 self-stretch flex flex-row items-start justify-start pt-0 pb-[130px] pl-[30px] pr-8 box-border max-w-full shrink-0 text-left text-36xl-8 text-black font-website-body-body-large-regular lg:pb-[55px] lg:box-border mq450:pb-9 mq450:box-border mq1400:pb-[84px] mq1400:box-border ml-[10px]">
+        <div class="flex-1 flex flex-col items-end justify-start gap-[100px] max-w-full mq450:gap-[25px] mq825:gap-[50px]">
+          <div class="self-stretch flex flex-row items-start justify-center py-0 pl-[22px] pr-5 box-border max-w-full text-center">
+            <div class="w-[1045px] flex flex-col items-center justify-start gap-[50px] max-w-full mq825:gap-[25px]">
+              <div class="self-stretch flex flex-col items-center justify-start gap-[60px] lg:gap-[30px] mt-16">
+                <div class="self-stretch relative tracking-[-0.02em] leading-[62px] font-semibold mq450:text-14xl mq450:leading-[37px] mq825:text-26xl mq825:leading-[50px]">
+                  Why Fasten Connect?
+                </div>
+                <div class="self-stretch flex flex-row items-start justify-start flex-wrap content-start pt-0 px-0 pb-0 gap-x-[86px] gap-y-[50px] text-left text-lg text-darkslategray-300 lg:gap-[43px] mq825:gap-[21px] lg:ml-10">
+                  <div class="w-[291px] flex flex-col items-center justify-start py-0 pl-4 pr-[15px] box-border gap-2">
+                    <div class="flex flex-col items-center justify-start gap-3.5">
+                      <img class="w-11 h-[44.7px] relative rounded-9xs-3 overflow-hidden shrink-0" loading="lazy" alt="" src="/frame-1707480585.cc8d43b4.svg">
+
+                      <div class="relative font-medium">Quick Connections</div>
+                    </div>
+                    <div class="relative text-base text-dimgray-200 text-center">
+                      Instantly link to healthcare systems for fast, secure
+                      access
+                    </div>
+                  </div>
+                  <div class="w-[291px] flex flex-col items-center justify-start py-0 pl-4 pr-[15px] box-border gap-2">
+                    <div class="flex flex-col items-center justify-start gap-3.5">
+                      <img class="w-11 h-[44.7px] relative rounded-9xs-3 overflow-hidden shrink-0" alt="" src="/frame-1707480585-11.03816e9b.svg">
+
+                      <div class="relative font-medium">
+                        FHIR-Compatible Exports
+                      </div>
+                    </div>
+                    <div class="relative text-base text-dimgray-200 text-center">
+                      Easily integrate standardized health data.
+                    </div>
+                  </div>
+                  <div class="w-[291px] flex flex-col items-center justify-start py-0 pl-4 pr-[15px] box-border gap-2">
+                    <div class="flex flex-col items-center justify-start py-0 px-3.5 gap-3.5">
+                      <img class="w-11 h-[44.7px] relative rounded-9xs-3 overflow-hidden shrink-0" alt="" src="/frame-1707480585-21.771db8a8.svg">
+
+                      <div class="relative font-medium">
+                        Patient-Controlled Sharing
+                      </div>
+                    </div>
+                    <div class="relative text-base text-dimgray-200 text-center">
+                      Patients securely share their records.
+                    </div>
+                  </div>
+                  <div class="w-[291px] flex flex-col items-center justify-start pt-0 pb-[0.1px] pl-4 pr-[15px] box-border gap-2">
+                    <div class="flex flex-col items-center justify-start pt-0 px-0 pb-[0.1px] gap-3.5">
+                      <img class="w-11 h-[44.7px] relative rounded-9xs-3 overflow-hidden shrink-0" alt="" src="/frame-1707480585-2.2658938c.svg">
+
+                      <div class="relative font-medium">
+                        Top-Tier Compliance
+                      </div>
+                    </div>
+                    <div class="relative text-base text-dimgray-200 text-center">
+                      Fully HIPAA and HITRUST-certified for data security.
+                    </div>
+                  </div>
+                  <div class="w-[291px] flex flex-col items-center justify-start pt-0 px-0 pb-[0.1px] box-border gap-2">
+                    <div class="flex flex-col items-center justify-start pt-0 px-0 pb-[0.1px] gap-3.5">
+                      <img class="w-11 h-[44.7px] relative rounded-9xs-3 overflow-hidden shrink-0" alt="" src="/frame-1707480585-4.a7e24738.svg">
+
+                      <div class="relative font-medium">
+                        Developer-Friendly Tools
+                      </div>
+                    </div>
+                    <div class="relative text-base text-dimgray-200 text-center">
+                      Includes clear documentation, JavaScript SDK, and
+                      API-first design.
+                    </div>
+                  </div>
+                  <div class="w-[291px] flex flex-col items-center justify-start pt-0 pb-[0.1px] pl-4 pr-[15px] box-border gap-2">
+                    <div class="flex flex-col items-center justify-start pt-0 px-0 pb-[0.1px] gap-3.5">
+                      <img class="w-11 h-[44.7px] relative rounded-9xs-3 overflow-hidden shrink-0" alt="" src="/frame-1707480585-5.d06afda1.svg">
+
+                      <div class="relative font-medium">Real-Time Updates</div>
+                    </div>
+                    <div class="relative text-base text-dimgray-200 text-center">
+                      Access accurate, up-to-date patient data anytime.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="cursor-pointer [border:none] py-[15px] px-[47px] bg-mediumslateblue-200 w-64 rounded-md flex flex-row items-center justify-center box-border hover:bg-mediumslateblue-100 mq450:pl-5 mq450:pr-5 mq450:box-border">
+                <div class="flex-1 relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center">
+                  Explore the API Now!
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="self-stretch flex flex-row items-start justify-end py-0 pl-[70px] pr-[68px] box-border max-w-full mq1400:pl-[35px] mq1400:pr-[34px] mq1400:box-border">
+            <div class="flex-1 flex flex-col items-start justify-start gap-[30px] max-w-full">
+              <div class="self-stretch overflow-hidden flex flex-row items-start justify-between max-w-full gap-5 mq825:flex-wrap">
+                <div class="w-[414px] relative tracking-[-0.02em] leading-[62px] font-semibold inline-block shrink-0 max-w-full text-3xl leading-[62px] md:text-4xl md:leading-[70px] lg:text-5xl lg:leading-[80px]">
+                  Hear from Our Customers
+                </div>
+
+                <img class="h-6 w-[83px] relative" loading="lazy" alt="" src="/group-8955.13cfe815.svg">
+              </div>
+              <div class="overflow-x-auto flex flex-row items-start justify-start gap-5 max-w-full text-base text-lightslategray">
+                <div class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full">
+                  <div class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full">
+                    <div class="self-stretch flex flex-row items-center justify-center max-w-full">
+                      <div class="flex-1 relative leading-[120%] inline-block max-w-full">
+                        <span>“Fasten has been an amazing partner - and I mean that
+                          in every sense of the word. They don't just provide a
+                          service, they dig in to understand the problem you're
+                          trying to solve and roll up their sleeves to help. The
+                          Fasten team...</span>
+                        <span class="font-medium text-gray-400">See More</span>
+                      </div>
+                    </div>
+                    <div class="flex flex-row items-center justify-between gap-4 text-gray-400">
+                      <img class="h-10 w-10 relative rounded-[50%] object-cover" loading="lazy" alt="" src="/ellipse-74@2x.01eb9cbb.png">
+
+                      <div class="flex flex-col items-start justify-start gap-1">
+                        <div class="relative tracking-[0.01em] leading-[120%] font-semibold inline-block min-w-[87px]">
+                          Jill Michal
+                        </div>
+                        <img class="w-[72px] h-[22px] relative object-cover" alt="" src="/image-9@2x.06e70ead.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full">
+                  <div class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full">
+                    <div class="self-stretch flex flex-row items-center justify-center max-w-full">
+                      <blockquote class="m-0 flex-1 relative leading-[120%] inline-block max-w-full">
+                        “Working with Fasten Health has been a great experience
+                        from the very start. Jason and his team made the
+                        onboarding process seamless, and their platform’s
+                        developer experience is top-notch, allowing us to
+                        integrate quickly and efficiently.”
+                      </blockquote>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-4 text-gray-400">
+                      <img class="h-10 w-10 relative rounded-[50%] object-cover" alt="" src="/ellipse-74-1@2x.ef239b3b.png">
+
+                      <div class="flex flex-col items-start justify-start py-0 pl-0 pr-[18px] gap-1">
+                        <div class="relative tracking-[0.01em] leading-[120%] font-semibold">
+                          Elliot
+                        </div>
+                        <img class="self-stretch h-[18px] relative max-w-full overflow-hidden shrink-0 object-cover" alt="" src="/image-10@2x.dd24162c.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full">
+                  <div class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full">
+                    <div class="self-stretch flex flex-row items-center justify-center max-w-full">
+                      <div class="flex-1 relative leading-[120%] inline-block max-w-full">
+                        <span>“Fasten has been an amazing partner - and I mean that
+                          in every sense of the word. They don't just provide a
+                          service, they dig in to understand the problem you're
+                          trying to solve and roll up their sleeves to help. The
+                          Fasten team...</span>
+                        <span class="font-medium text-gray-400">See More</span>
+                      </div>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-4 text-gray-400">
+                      <img class="h-10 w-10 relative rounded-[50%] object-cover" alt="" src="/ellipse-74-1@2x.ef239b3b.png">
+
+                      <div class="flex flex-col items-start justify-start gap-1">
+                        <div class="self-stretch relative tracking-[0.01em] leading-[120%] font-semibold">
+                          Yash
+                        </div>
+                        <img class="self-stretch h-5 relative max-w-full overflow-hidden shrink-0 object-cover" loading="lazy" alt="" src="/image-11@2x.a8e13067.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full">
+                  <div class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full">
+                    <div class="flex flex-row items-center justify-start gap-0.5">
+                      <img class="h-4 w-[17.5px] relative" loading="lazy" alt="" src="/star-1.6ec0f7eb.svg">
+
+                      <img class="h-4 w-[17.5px] relative" loading="lazy" alt="" src="/star-2.018e206d.svg">
+
+                      <img class="h-4 w-[17.5px] relative" loading="lazy" alt="" src="/star-3.8e0ecc8b.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/third-quote-stars.b535a755.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/fourth-quote-stars.816628ec.svg">
+                    </div>
+                    <div class="self-stretch flex flex-row items-center justify-center max-w-full">
+                      <blockquote class="m-0 flex-1 relative leading-[120%] inline-block max-w-full">
+                        <p class="m-0">
+                          “Jason is incredibly passionate and thoughtful. He was
+                          committed to our success from our very first call and
+                          helped us design the right experience.
+                        </p>
+                        <p class="m-0">
+                          Fasten made it incredibly easy to connect our users to
+                          their medical records and improve the quality of our
+                          care.”
+                        </p>
+                      </blockquote>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-4 text-gray-400">
+                      <img class="h-10 w-10 relative rounded-[50%] object-cover" alt="" src="/ellipse-74-1@2x.ef239b3b.png">
+
+                      <div class="w-[87px] flex flex-col items-start justify-start py-0 px-0 box-border gap-1">
+                        <div class="relative tracking-[0.01em] leading-[120%] font-semibold whitespace-nowrap">
+                          Benjamin Lauzier
+                        </div>
+                        <img class="self-stretch h-[27px] relative max-w-full overflow-hidden shrink-0 object-cover" loading="lazy" alt="" src="/image-12@2x.b5f9501b.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full">
+                  <div class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full">
+                    <div class="flex flex-row items-center justify-start gap-0.5">
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/star-1.6ec0f7eb.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/star-2.018e206d.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/star-3.8e0ecc8b.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/third-quote-stars.b535a755.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/fourth-quote-stars.816628ec.svg">
+                    </div>
+                    <div class="self-stretch flex flex-row items-center justify-center max-w-full">
+                      <blockquote class="m-0 flex-1 relative leading-[120%] inline-block max-w-full">
+                        “From a developer perspective, it's clear you're a
+                        product built and designed for engineers. The quality
+                        and thoughtfulness shows through in both the
+                        documentation and integration. I also appreciate how
+                        responsive you are to issues and feature requests. It's
+                        great working with you!”
+                      </blockquote>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-4 text-gray-400">
+                      <img class="h-10 w-10 relative rounded-[50%] object-cover" alt="" src="/ellipse-74-1@2x.ef239b3b.png">
+
+                      <div class="w-[87px] flex flex-col items-start justify-start py-0 px-0 box-border gap-1">
+                        <div class="relative tracking-[0.01em] leading-[120%] font-semibold inline-block min-w-[105px]">
+                          Greg Kuwaye
+                        </div>
+                        <img class="self-stretch h-[27px] relative max-w-full overflow-hidden shrink-0 object-cover" alt="" src="/image-12@2x.b5f9501b.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full">
+                  <div class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full">
+                    <div class="flex flex-row items-center justify-start gap-0.5">
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/star-1.6ec0f7eb.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/star-2.018e206d.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/star-3.8e0ecc8b.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/third-quote-stars.b535a755.svg">
+
+                      <img class="h-4 w-[17.5px] relative" alt="" src="/fourth-quote-stars.816628ec.svg">
+                    </div>
+                    <div class="self-stretch flex flex-row items-center justify-center max-w-full">
+                      <blockquote class="m-0 flex-1 relative leading-[120%] inline-block max-w-full">
+                        “Working with Fasten Health has been an absolute
+                        game-changer for our organization. Their patient records
+                        API is incredibly robust and easy to integrate, allowing
+                        us to streamline access to vital health data. We love
+                        Fasten's innovative and forward-thinking mindset. As an
+                        early adopter, we’ve been impressed by how seamless and
+                        collaborative the experience has been — a true partner
+                        that is shaping the future of healthcare”
+                      </blockquote>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-4 text-gray-400">
+                      <img class="h-10 w-10 relative rounded-[50%] object-cover" alt="" src="/ellipse-74-1@2x.ef239b3b.png">
+
+                      <div class="flex flex-col items-start justify-start gap-1">
+                        <div class="relative tracking-[0.01em] leading-[120%] font-semibold">
+                          Dan
+                        </div>
+                        <img class="self-stretch h-[31px] relative max-w-full overflow-hidden shrink-0 object-cover" loading="lazy" alt="" src="/image-13@2x.a1935920.png">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="self-stretch rounded-xl bg-gray-600 overflow-hidden flex flex-row items-start justify-between pt-[110px] pb-[115px] pl-[70px] pr-[67px] box-border relative max-w-full gap-5 z-[1] text-29xl text-neutral-100 lg:flex-wrap mq1400:pl-[35px] mq1400:pr-[33px] mq1400:box-border lg:top-[-130px] top-[-180px]">
+            <!-- Image Section -->
+            <div class="h-[1517.8px] w-[1440px] absolute !m-[0] right-[-32px] bottom-[-729.8px]">
+              <img class="absolute top-[428.7px] left-[30px] w-[1380px] h-[914px] object-fill" alt="" src="/image-21@2x.ce8339f7.png">
+              <img class="absolute top-[0px] left-[-74px] w-[2647.1px] h-[1991.3px] z-[1]" alt="" src="/mask-group.19ccd913.svg">
+            </div>
+
+            <!-- Text Section -->
+            <h1 class="m-0 relative text-inherit tracking-[-0.5px] font-bold font-[inherit] inline-block max-w-full z-[2] lg:flex-1 text-center lg:text-left">
+              <p class="m-0 text-2xl sm:text-2xl md:text-4xl lg:text-5xl">
+                Subscribe for
+              </p>
+              <p class="m-0 text-2xl sm:text-2xl md:text-4xl lg:text-5xl">
+                Offer Updates
+              </p>
+            </h1>
+
+            <!-- Form Section -->
+            <div class="w-[570px] flex flex-col items-center justify-start pt-[21.5px] px-0 pb-0 box-border max-w-full text-[20.4px] text-gray-1100 mx-auto sm:mt- lg:mt-0 sm:px-4">
+              <div class="self-stretch rounded-lg bg-whitesmoke overflow-hidden flex flex-col sm:flex-row items-center justify-between py-3.5 px-6 gap-5 z-[2]">
+                <!-- Label Section -->
+                <div class="flex flex-col items-center justify-start pt-[13px] px-0 pb-0 text-center">
+                  <div class="relative">Enter Your Email</div>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="cursor-pointer [border:none] py-[15px] px-[47px] bg-mediumslateblue-200 rounded-md flex flex-row items-start justify-center hover:bg-mediumslateblue-100">
+                  <div class="relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center inline-block min-w-[56px]">
+                    Submit
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <img class="self-stretch relative max-w-full overflow-hidden max-h-full object-cover shrink-0 mt-[-202.7px]" alt="" src="/image-1-12@2x.407233c2.png">
+
+      <footer class="self-stretch shadow-[0px_-5px_47px_rgba(0,_0,_0,_0.11)] bg-neutral-100 overflow-hidden flex flex-col items-start justify-start pt-[79.7px] px-[100px] pb-[30.3px] box-border gap-[97.3px] shrink-0 max-w-full z-[1] mt-[-222.7px] text-left text-lg text-darkslategray-100 font-website-body-body-large-regular">
+        <div class="w-full flex flex-col md:flex-row items-start justify-between gap-5 md:gap-10">
+          <div class="w-full md:w-[380px] flex flex-col items-start justify-start gap-[36.4px] max-w-full">
+            <div class="self-stretch flex flex-col items-start justify-start gap-[12.3px]">
+              <img class="w-[206px] h-[67px] relative object-cover" alt="" src="/image-1-22@2x.ec97dbe3.png">
+              <div class="relative leading-[26px]">
+                Fasten Connect is a secure, real-time healthcare data sharing
+                platform for providers and patients.
+              </div>
+            </div>
+            <div class="flex flex-row items-start justify-start py-0 px-[11px]">
+              <div class="w-[28.3px] flex flex-row items-start justify-start gap-3">
+                <img class="h-[28.3px] w-[28.3px] relative" loading="lazy" alt="" src="/vector.3aa09ad4.svg">
+                <img class="h-[26.9px] w-[26.9px] relative" alt="" src="/vector-1.9d54aa21.svg">
+                <img class="h-[28.3px] w-[28.3px] relative" alt="" src="/vector-2.8d81676b.svg">
+                <img class="h-[26.9px] w-[26.9px] relative" alt="" src="/vector-3.449d1002.svg">
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row items-start justify-between gap-[46px] text-lgi-4 text-gray-1200 mr-24">
+            <div class="flex flex-col items-start justify-start gap-[25px]">
+              <b class="relative text-base-7 leading-[23.7px] text-gray-500">Company</b>
+              <div class="relative leading-[27.1px]">About</div>
+              <div class="relative leading-[27.1px] inline-block min-w-[78px]">
+                Careers
+              </div>
+              <div class="relative leading-[27.1px] inline-block min-w-[126px]">
+                Brand Center
+              </div>
+              <div class="relative leading-[27.1px] inline-block min-w-[42px]">
+                Blog
+              </div>
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[25px]">
+              <b class="relative text-base-7 leading-[23.7px] inline-block text-gray-500 min-w-[90px]">Help center</b>
+              <div class="relative leading-[27.1px]">Discord Server</div>
+              <div class="relative leading-[27.1px]">Reddit</div>
+              <div class="relative leading-[27.1px]">GitHub</div>
+              <div class="relative leading-[27.1px]">Contact</div>
+            </div>
+            <div class="w-[146px] flex flex-col items-start justify-start gap-8 text-base-7 text-gray-500">
+              <b class="relative leading-[23.7px] inline-block min-w-[43px]">Legal</b>
+              <div class="self-stretch flex flex-col items-start justify-start py-0 pl-0 pr-[15px] gap-8 text-right text-lgi text-dimgray-300">
+                <div class="self-stretch relative tracking-[0.2px] leading-[19px] whitespace-nowrap">
+                  Privacy Policy
+                </div>
+                <div class="relative tracking-[0.2px] leading-[19px]">
+                  Terms
+                </div>
+                <div class="w-[104px] relative text-lg tracking-[0.2px] leading-[19px] flex items-center">
+                  Compliance
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col items-start justify-start gap-[25px]">
+              <b class="relative text-base-7 leading-[23.7px] inline-block text-gray-500 min-w-[78px]">Download</b>
+              <div class="relative leading-[27.1px] inline-block min-w-[76px]">
+                Window
+              </div>
+              <div class="relative leading-[27.1px]">MacOS</div>
+              <div class="relative leading-[27.1px]">Docker</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="self-stretch flex flex-col items-start justify-start gap-[32.7px] text-xl text-black font-space-grotesk">
+          <div class="self-stretch h-px relative border-darkgray border-t-[1px] border-solid box-border"></div>
+          <div class="self-stretch flex flex-row items-start justify-start py-0 px-4 sm:px-18 md:px-[411px] shrink-0">
+            <div class="relative leading-[24px] text-center md:ml-96">
+              © 2022 Fasten Health™. All Rights Reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script src="/Fasten.3464ddca.js"></script></body>
+</html>
