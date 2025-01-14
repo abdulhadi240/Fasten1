@@ -22,13 +22,40 @@
       rel="stylesheet"
     />
     <script src="script.js"></script>
-
-    <link rel="stylesheet" href="styleindexpage.css" />
-
     <style>
-      /* No changes to Desktop view */
+      @media (max-width: 768px) {
+        /* Existing description text adjustments - No changes here */
+        .absolute.top-\[322px\].left-\[71px\] {
+          left: 20px; /* Adjust position for mobile */
+          top: 270px; /* Adjust top position */
+          width: 90%; /* Adjust width for mobile */
+          font-size: 1rem; /* Adjust font size */
+          line-height: 1.5rem; /* Adjust line height for readability */
+        }
 
-      /* Tablet View (max-width: 1024px) */
+        /* Existing heading adjustments - No changes here */
+        .absolute.top-\[186px\].left-\[71px\] {
+          left: 20px; /* Adjust position for mobile */
+          top: 150px; /* Adjust top position */
+          width: 90%; /* Adjust width for mobile */
+          font-size: 2rem; /* Adjust font size */
+          line-height: 2.5rem; /* Adjust line height */
+        }
+
+        /* Search box and button adjustments for smaller screens */
+        .absolute.top-\[449px\].left-\[71px\] {
+          top: 550px; /* Move the search box and button further down on mobile */
+          left: 20px; /* Adjust left margin */
+          width: 90%; /* Set width to 90% for better mobile display */
+        }
+
+        /* Adjust the input field to take full width and make it responsive */
+        .self-stretch.relative.leading-\[26px\] {
+          width: 100%; /* Ensure the input takes the full width */
+          padding-left: 15px; /* Adjust padding inside the input field */
+          font-size: 0.9rem; /* Adjust font size for better readability */
+        }
+      }
       @media (max-width: 1024px) {
         h1 {
           font-size: 2rem; /* Adjust font size for tablet */
@@ -76,19 +103,19 @@
             <!-- Navigation Links (Desktop Only) -->
             <nav class="hidden md:flex flex-row items-center gap-8 relative">
               <a
-                class="[text-decoration:none] font-medium text-midnightblue"
+                class="[text-decoration:none] font-bold text-midnightblue"
                 href="#"
                 >Home</a
               >
               <a
                 class="[text-decoration:none] font-medium text-midnightblue"
-                href="#"
+                href="/about-page.html"
                 >About</a
               >
               <a
                 class="[text-decoration:none] font-medium text-midnightblue"
-                href="#"
-                >Patients</a
+                href="/resources-page.html"
+                >Resources</a
               >
 
               <!-- Dropdown Menu -->
@@ -138,13 +165,13 @@
 
               <a
                 class="[text-decoration:none] font-medium text-midnightblue"
-                href="#"
-                >FAQs</a
+                href="/developer.html"
+                >Developer</a
               >
               <a
                 class="[text-decoration:none] font-medium text-midnightblue"
-                href="#"
-                >For Business</a
+                href="/case-study-page.html"
+                >Case Studies</a
               >
             </nav>
 
@@ -181,30 +208,30 @@
             <!-- Mobile Menu -->
             <div
               id="mobile-menu"
-              class="hidden md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50"
+              class="md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50"
             >
               <a
-                href="#"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                href="/"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-bold hover:underline"
               >
                 Home
               </a>
               <a
-                href="#"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                href="/about-page.html"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
               >
                 About
               </a>
               <a
-                href="#"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                href="/resources-page.html"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
               >
-                Patients
+                Resources
               </a>
               <div class="relative">
-                <button
+                <a
                   id="submenu-toggle"
-                  class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                  class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:underline"
                 >
                   How It Works
                   <svg
@@ -222,45 +249,45 @@
                       d="M19 9l-7 7-7-7"
                     />
                   </svg>
-                </button>
+                </a>
                 <div
                   id="how-it-works-submenu"
                   class="hidden flex-col bg-white shadow-md w-full mt-1"
                 >
                   <a
                     href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
                   >
                     Item 1
                   </a>
                   <a
                     href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
                   >
                     Item 2
                   </a>
                   <a
                     href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
                   >
                     Item 3
                   </a>
                 </div>
               </div>
               <a
-                href="#"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                href="/developer.html"
+                class="block w-full px-6 py-3 font-medium text-midnightblue text-left hover:underline"
               >
-                FAQs
+                Developer
               </a>
               <a
-                href="#"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+                href="/case-study-page.html"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
               >
-                For Business
+                Case Studies
               </a>
 
-              <div class="w-full flex flex-col items-stretch gap-4 mt-4 px-6">
+              <div class="w-full flex flex-col items-stretch gap-4 mt-4">
                 <a
                   href="#"
                   class="text-midnightblue font-medium text-center py-2 border border-midnightblue rounded hover:bg-gray-100 transition-colors"
@@ -361,10 +388,10 @@
         class="mt-14 self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full shrink-0 text-center text-xl text-gray-200 font-website-body-body-large-regular"
       >
         <div
-          class="w-[1240px] flex flex-col items-start justify-start gap-[100px] max-w-full mq450:gap-[25px] mq825:gap-[50px]"
+          class="w-[1240px] flex flex-col items-start justify-start gap-[100px] max-w-full"
         >
           <div
-            class="self-stretch flex flex-col items-start justify-start gap-[35px] max-w-full mq825:gap-[17px]"
+            class="self-stretch flex flex-col items-start justify-start gap-[35px] max-w-full"
           >
             <div
               class="w-full text-black font-medium leading-[30px] text-lg md:text-xl"
@@ -449,17 +476,19 @@
                   />
 
                   <div
-                    class="absolute top-[49px] left-[286px] [background:linear-gradient(90deg,_#fff,_rgba(255,_255,_255,_0))] w-full h-full [transform:_rotate(180deg)] [transform-origin:0_0] z-[1]"
+                    class="absolute top-[49px] left-[286px] w-full h-full [transform:_rotate(180deg)] [transform-origin:0_0] z-[1]"
                   ></div>
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="mt-2 flex flex-row items-start justify-between gap-8 max-w-full text-left text-dimgray-100"
+            class="mt-2 flex flex-col md:flex-row items-start justify-between gap-8 max-w-full text-left text-dimgray-100"
           >
             <!-- Left Section: Text Content -->
-            <div class="flex-1 flex flex-col items-start justify-start gap-6">
+            <div
+              class="flex-1 flex flex-col items-start justify-start gap-6 mb-10"
+            >
               <h1
                 class="text-33xl font-semibold text-black leading-[62px] mq450:text-23xl mq450:leading-[37px]"
               >
@@ -490,12 +519,12 @@
 
             <!-- Right Section: Image -->
             <div
-              class="hidden md:flex items-center justify-center flex-1 max-w-[500px] relative"
+              class="flex items-center justify-center flex-1 max-w-[500px] relative"
             >
               <div class="relative">
                 <!-- Gradient 1 -->
                 <div
-                  class="absolute bottom-[-30px] right-[-40px] shadow-lg rounded-3xl w-[287px] h-[438px] bg-gradient-to-b from-[#6944BA66] to-[#31207200]"
+                  class="hidden md:absolute bottom-[-30px] right-[-40px] shadow-lg rounded-3xl w-[287px] h-[438px] bg-gradient-to-b from-[#6944BA66] to-[#31207200]"
                 ></div>
                 <!-- Gradient 2 -->
                 <div
@@ -516,16 +545,16 @@
         class="mt-24 self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full shrink-0 text-left text-33xl text-black font-website-body-body-large-regular"
       >
         <div
-          class="w-[1240px] flex flex-row items-start justify-center gap-[71px] max-w-full lg:flex-wrap mq450:gap-[18px] mq825:gap-[35px]"
+          class="w-[1240px] flex flex-col-reverse md:flex-row items-start justify-center gap-[71px] max-w-full lg:flex-wrap"
         >
           <!-- Left Content: Image Section -->
           <div
-            class="flex-1 flex flex-row items-start justify-start min-w-[404px] max-w-full mq825:min-w-full hidden md:flex"
+            class="flex-1 flex flex-row items-start justify-start min-w-[404px] max-w-full"
           >
             <div class="h-[487px] flex-1 relative max-w-full">
               <!-- Gradient 1 -->
               <div
-                class="absolute top-[0px] left-[27px] shadow-[0.8px_1.5px_28.2px_rgba(0,_0,_0,_0.04)] rounded-3xl-2 [background:linear-gradient(180deg,_rgba(105,_68,_186,_0.4),_rgba(49,_32,_114,_0))] w-[287px] h-[438px] overflow-hidden"
+                class="hidden md:absolute top-[0px] left-[27px] shadow-[0.8px_1.5px_28.2px_rgba(0,_0,_0,_0.04)] rounded-3xl-2 [background:linear-gradient(180deg,_rgba(105,_68,_186,_0.4),_rgba(49,_32,_114,_0))] w-[287px] h-[438px] overflow-hidden"
               ></div>
               <!-- Gradient 2 -->
               <div
@@ -542,7 +571,7 @@
 
           <!-- Right Content: Text Section -->
           <div
-            class="w-[547px] flex flex-col items-start justify-start pt-[59px] px-0 pb-0 box-border max-w-full lg:flex-1 mq450:pt-[38px] mq450:box-border mq825:min-w-full"
+            class="w-[547px] flex flex-col items-start justify-start pt-[59px] px-0 pb-0 box-border max-w-full lg:flex-1"
           >
             <div
               class="self-stretch flex flex-col items-start justify-start gap-[22px] max-w-full"
@@ -552,10 +581,10 @@
                 class="self-stretch flex flex-col items-start justify-start max-w-full"
               >
                 <div
-                  class="self-stretch flex flex-col items-start justify-start py-px pl-0 pr-5 box-border gap-4 max-w-full"
+                  class="self-stretch flex flex-col items-start justify-start py-px pl-0 md:pr-5 box-border gap-4 max-w-full"
                 >
                   <h1
-                    class="m-0 relative text-inherit tracking-[-0.02em] leading-[62px] font-semibold font-[inherit] inline-block max-w-full mq450:text-12xl mq450:leading-[37px] mq825:text-23xl mq825:leading-[50px]"
+                    class="relative text-start text-inherit tracking-[-0.02em] leading-[62px] font-semibold font-[inherit] inline-block max-w-full"
                   >
                     Built for Developers
                   </h1>
@@ -614,7 +643,7 @@
       </section>
 
       <section
-        class="mt-24 self-stretch h-[1043px] flex flex-row items-start justify-start py-0 px-[90px] box-border max-w-full text-center text-33xl text-neutral-100 font-website-body-body-large-regular"
+        class="mt-24 self-stretch h-[1043px] hidden md:flex flex-row items-center justify-center py-0 box-border max-w-full text-center text-33xl text-neutral-100 font-website-body-body-large-regular"
       >
         <div
           class="h-[1043px] w-[1380px] [backdrop-filter:blur(405px)] rounded-xl bg-gray-600 overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[678px] px-[264px] pb-[443px] box-border relative gap-[78px] lg:pt-[678px] lg:px-[264px] lg:pb-[443px] lg:gap-[78px] md:pt-[287px] md:px-[132px] md:pb-[187px] md:gap-[39px] sm:pt-[150px] sm:px-[30px] sm:pb-[100px] sm:gap-[20px]"
@@ -628,7 +657,7 @@
           />
 
           <div
-            class="mt-[-816.5px] w-[1141px] h-[738.5px] flex flex-row items-start justify-start pt-[230.5px] px-[68px] pb-[230px] box-border relative min-h-[739px] shrink-0 max-w-[134%] lg:pl-[34px] lg:pr-[34px] lg:box-border mq825:pt-[150px] mq825:pb-[149px] mq825:box-border"
+            class="mt-[-816.5px] w-[1141px] h-[738.5px] flex flex-row items-start justify-start pt-[230.5px] px-[68px] pb-[230px] box-border relative min-h-[739px] shrink-0 max-w-[134%] lg:pl-[34px] lg:pr-[50px] lg:box-border"
           >
             <div
               class="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px]"
@@ -646,17 +675,17 @@
               />
             </div>
             <h1
-              class="m-0 w-[717px] relative text-inherit leading-[58px] font-semibold font-[inherit] inline-block shrink-0 max-w-full z-[1] mq450:text-12xl mq450:leading-[35px] mq825:text-23xl mq825:leading-[46px]"
+              class="pr-20 relative text-inherit leading-[58px] font-semibold font-[inherit] inline-block shrink-0 max-w-full z-[1]"
             >
               Getting Started with Fasten Connect
             </h1>
           </div>
 
           <div
-            class="ml-[-294px] flex flex-row items-start justify-start py-0 pl-[304px] pr-0 box-border gap-[7px] shrink-0 max-w-[134%] text-left text-lgi-1 text-mediumpurple lg:pl-[152px] lg:box-border mq450:pl-5 mq450:box-border mq825:pl-[76px] mq825:box-border mq1400:flex-wrap mq1400:justify-center"
+            class="ml-[-294px] flex flex-row items-start justify-start py-0 pl-[304px] pr-0 box-border gap-[7px] shrink-0 max-w-[134%] text-left text-lgi-1 text-mediumpurple lg:pl-[152px] lg:box-border mq450:pl-5 mq450:box-border"
           >
             <div
-              class="ml-[-348px] flex flex-col items-start justify-start pt-[121.7px] px-0 pb-0 box-border max-w-full mq825:pt-[79px] mq825:box-border mq1400:flex-1 mq1400:min-w-full"
+              class="ml-[-348px] flex flex-col items-start justify-start pt-[121.7px] px-0 pb-0 box-border max-w-full"
             >
               <img
                 class="hidden lg:block w-[341px] relative max-h-full mix-blend-color-dodge shrink-0 z-[1] mq1400:self-stretch mq1400:w-auto"
@@ -758,27 +787,27 @@
         class="mt-14 self-stretch flex flex-row items-start justify-start pt-0 pb-[130px] pl-[30px] pr-8 box-border max-w-full shrink-0 text-left text-36xl-8 text-black font-website-body-body-large-regular lg:pb-[55px] lg:box-border mq450:pb-9 mq450:box-border mq1400:pb-[84px] mq1400:box-border ml-[10px]"
       >
         <div
-          class="flex-1 flex flex-col items-end justify-start gap-[100px] max-w-full mq450:gap-[25px] mq825:gap-[50px]"
+          class="flex-1 flex flex-col items-end justify-start gap-[100px] max-w-full"
         >
           <div
-            class="self-stretch flex flex-row items-start justify-center py-0 pl-[22px] pr-5 box-border max-w-full text-center"
+            class="self-stretch flex flex-row items-start justify-center box-border max-w-full text-center"
           >
             <div
-              class="w-[1045px] flex flex-col items-center justify-start gap-[50px] max-w-full mq825:gap-[25px]"
+              class="w-[1045px] flex flex-col items-center justify-start gap-[50px] max-w-full"
             >
               <div
                 class="self-stretch flex flex-col items-center justify-start gap-[60px] lg:gap-[30px] mt-16"
               >
                 <div
-                  class="self-stretch relative tracking-[-0.02em] leading-[62px] font-semibold mq450:text-14xl mq450:leading-[37px] mq825:text-26xl mq825:leading-[50px]"
+                  class="self-stretch relative tracking-[-0.02em] leading-[62px] font-semibold"
                 >
                   Why Fasten Connect?
                 </div>
                 <div
-                  class="self-stretch flex flex-row items-start justify-start flex-wrap content-start pt-0 px-0 pb-0 gap-x-[86px] gap-y-[50px] text-left text-lg text-darkslategray-300 lg:gap-[43px] mq825:gap-[21px] lg:ml-10"
+                  class="self-stretch flex flex-row items-center justify-center flex-wrap content-start pt-0 px-0 pb-0 gap-x-[86px] gap-y-[50px] text-left text-lg text-darkslategray-300 lg:gap-[43px] lg:ml-10"
                 >
                   <div
-                    class="w-[291px] flex flex-col items-center justify-start py-0 pl-4 pr-[15px] box-border gap-2"
+                    class="w-[291px] flex flex-col items-center justify-start text-center py-0 pl-4 pr-[15px] box-border gap-2"
                   >
                     <div
                       class="flex flex-col items-center justify-start gap-3.5"
@@ -800,7 +829,7 @@
                     </div>
                   </div>
                   <div
-                    class="w-[291px] flex flex-col items-center justify-start py-0 pl-4 pr-[15px] box-border gap-2"
+                    class="w-[291px] flex flex-col items-center text-center justify-start box-border gap-2"
                   >
                     <div
                       class="flex flex-col items-center justify-start gap-3.5"
@@ -822,7 +851,7 @@
                     </div>
                   </div>
                   <div
-                    class="w-[291px] flex flex-col items-center justify-start py-0 pl-4 pr-[15px] box-border gap-2"
+                    class="w-[291px] flex flex-col items-center text-center justify-start py-0 pl-4 pr-[15px] box-border gap-2"
                   >
                     <div
                       class="flex flex-col items-center justify-start py-0 px-3.5 gap-3.5"
@@ -922,16 +951,16 @@
             </div>
           </div>
           <div
-            class="self-stretch flex flex-row items-start justify-end py-0 pl-[70px] pr-[68px] box-border max-w-full mq1400:pl-[35px] mq1400:pr-[34px] mq1400:box-border"
+            class="self-stretch flex flex-row items-start justify-end py-0 md:[70px] md:pr-[68px] box-border max-w-full"
           >
             <div
-              class="flex-1 flex flex-col items-start justify-start gap-[30px] max-w-full"
+              class="flex-1 flex flex-col items-start justify-start gap-[30px] max-w-full mb-24"
             >
               <div
-                class="self-stretch overflow-hidden flex flex-row items-start justify-between max-w-full gap-5 mq825:flex-wrap"
+                class="self-stretch overflow-hidden flex flex-row items-start justify-between max-w-full gap-5"
               >
                 <div
-                  class="w-[414px] relative tracking-[-0.02em] leading-[62px] font-semibold inline-block shrink-0 max-w-full text-3xl leading-[62px] md:text-4xl md:leading-[70px] lg:text-5xl lg:leading-[80px]"
+                  class="w-[414px] relative tracking-[-0.02em] leading-[62px] font-semibold inline-block shrink-0 max-w-full text-3xl md:text-4xl md:leading-[70px] lg:text-5xl lg:leading-[80px]"
                 >
                   Hear from Our Customers
                 </div>
@@ -947,7 +976,7 @@
                 class="overflow-x-auto flex flex-row items-start justify-start gap-5 max-w-full text-base text-lightslategray"
               >
                 <div
-                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full"
+                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] md:px-[38px] box-border max-w-full"
                 >
                   <div
                     class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full"
@@ -996,7 +1025,7 @@
                   </div>
                 </div>
                 <div
-                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full"
+                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] md:px-[38px] box-border max-w-full"
                 >
                   <div
                     class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full"
@@ -1007,11 +1036,11 @@
                       <blockquote
                         class="m-0 flex-1 relative leading-[120%] inline-block max-w-full"
                       >
-                        “Working with Fasten Health has been a great experience
-                        from the very start. Jason and his team made the
-                        onboarding process seamless, and their platform’s
-                        developer experience is top-notch, allowing us to
-                        integrate quickly and efficiently.”
+                        “Fasten has been an amazing partner - and I mean that in
+                        every sense of the word. They don't just provide a
+                        service, they dig in to understand the problem you're
+                        trying to solve and roll up their sleeves to help. The
+                        Fasten team...
                       </blockquote>
                     </div>
                     <div
@@ -1041,7 +1070,7 @@
                   </div>
                 </div>
                 <div
-                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full"
+                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] md:px-[38px] box-border max-w-full"
                 >
                   <div
                     class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full"
@@ -1089,259 +1118,11 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full"
-                >
-                  <div
-                    class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full"
-                  >
-                    <div
-                      class="flex flex-row items-center justify-start gap-0.5"
-                    >
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        loading="lazy"
-                        alt=""
-                        src="/public/star-1.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        loading="lazy"
-                        alt=""
-                        src="/public/star-2.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        loading="lazy"
-                        alt=""
-                        src="/public/star-3.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/third-quote-stars.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/fourth-quote-stars.svg"
-                      />
-                    </div>
-                    <div
-                      class="self-stretch flex flex-row items-center justify-center max-w-full"
-                    >
-                      <blockquote
-                        class="m-0 flex-1 relative leading-[120%] inline-block max-w-full"
-                      >
-                        <p class="m-0">
-                          “Jason is incredibly passionate and thoughtful. He was
-                          committed to our success from our very first call and
-                          helped us design the right experience.
-                        </p>
-                        <p class="m-0">
-                          Fasten made it incredibly easy to connect our users to
-                          their medical records and improve the quality of our
-                          care.”
-                        </p>
-                      </blockquote>
-                    </div>
-                    <div
-                      class="flex flex-row items-start justify-between gap-4 text-gray-400"
-                    >
-                      <img
-                        class="h-10 w-10 relative rounded-[50%] object-cover"
-                        alt=""
-                        src="/public/ellipse-74-1@2x.png"
-                      />
-
-                      <div
-                        class="w-[87px] flex flex-col items-start justify-start py-0 px-0 box-border gap-1"
-                      >
-                        <div
-                          class="relative tracking-[0.01em] leading-[120%] font-semibold whitespace-nowrap"
-                        >
-                          Benjamin Lauzier
-                        </div>
-                        <img
-                          class="self-stretch h-[27px] relative max-w-full overflow-hidden shrink-0 object-cover"
-                          loading="lazy"
-                          alt=""
-                          src="/public/image-12@2x.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full"
-                >
-                  <div
-                    class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full"
-                  >
-                    <div
-                      class="flex flex-row items-center justify-start gap-0.5"
-                    >
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/star-1.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/star-2.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/star-3.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/third-quote-stars.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/fourth-quote-stars.svg"
-                      />
-                    </div>
-                    <div
-                      class="self-stretch flex flex-row items-center justify-center max-w-full"
-                    >
-                      <blockquote
-                        class="m-0 flex-1 relative leading-[120%] inline-block max-w-full"
-                      >
-                        “From a developer perspective, it's clear you're a
-                        product built and designed for engineers. The quality
-                        and thoughtfulness shows through in both the
-                        documentation and integration. I also appreciate how
-                        responsive you are to issues and feature requests. It's
-                        great working with you!”
-                      </blockquote>
-                    </div>
-                    <div
-                      class="flex flex-row items-start justify-between gap-4 text-gray-400"
-                    >
-                      <img
-                        class="h-10 w-10 relative rounded-[50%] object-cover"
-                        alt=""
-                        src="/public/ellipse-74-1@2x.png"
-                      />
-
-                      <div
-                        class="w-[87px] flex flex-col items-start justify-start py-0 px-0 box-border gap-1"
-                      >
-                        <div
-                          class="relative tracking-[0.01em] leading-[120%] font-semibold inline-block min-w-[105px]"
-                        >
-                          Greg Kuwaye
-                        </div>
-                        <img
-                          class="self-stretch h-[27px] relative max-w-full overflow-hidden shrink-0 object-cover"
-                          alt=""
-                          src="/public/image-12@2x.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="w-[492px] shadow-[0px_0px_4px_rgba(0,_0,_0,_0.12)] rounded-3xs bg-neutral-100 overflow-hidden shrink-0 flex flex-col items-start justify-start py-[34px] px-[38px] box-border max-w-full"
-                >
-                  <div
-                    class="self-stretch flex flex-col items-start justify-start gap-[17px] max-w-full"
-                  >
-                    <div
-                      class="flex flex-row items-center justify-start gap-0.5"
-                    >
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/star-1.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/star-2.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/star-3.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/third-quote-stars.svg"
-                      />
-
-                      <img
-                        class="h-4 w-[17.5px] relative"
-                        alt=""
-                        src="/public/fourth-quote-stars.svg"
-                      />
-                    </div>
-                    <div
-                      class="self-stretch flex flex-row items-center justify-center max-w-full"
-                    >
-                      <blockquote
-                        class="m-0 flex-1 relative leading-[120%] inline-block max-w-full"
-                      >
-                        “Working with Fasten Health has been an absolute
-                        game-changer for our organization. Their patient records
-                        API is incredibly robust and easy to integrate, allowing
-                        us to streamline access to vital health data. We love
-                        Fasten's innovative and forward-thinking mindset. As an
-                        early adopter, we’ve been impressed by how seamless and
-                        collaborative the experience has been — a true partner
-                        that is shaping the future of healthcare”
-                      </blockquote>
-                    </div>
-                    <div
-                      class="flex flex-row items-start justify-between gap-4 text-gray-400"
-                    >
-                      <img
-                        class="h-10 w-10 relative rounded-[50%] object-cover"
-                        alt=""
-                        src="/public/ellipse-74-1@2x.png"
-                      />
-
-                      <div
-                        class="flex flex-col items-start justify-start gap-1"
-                      >
-                        <div
-                          class="relative tracking-[0.01em] leading-[120%] font-semibold"
-                        >
-                          Dan
-                        </div>
-                        <img
-                          class="self-stretch h-[31px] relative max-w-full overflow-hidden shrink-0 object-cover"
-                          loading="lazy"
-                          alt=""
-                          src="/public/image-13@2x.png"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
           <div
-            class="self-stretch rounded-xl bg-gray-600 overflow-hidden flex flex-row items-start justify-between pt-[110px] pb-[115px] pl-[70px] pr-[67px] box-border relative max-w-full gap-5 z-[1] text-29xl text-neutral-100 lg:flex-wrap mq1400:pl-[35px] mq1400:pr-[33px] mq1400:box-border lg:top-[-130px] top-[-180px]"
+            class="self-stretch rounded-xl text-center flex-col overflow-hidden flex md:flex-row items-start justify-between pt-[110px] pb-[115px] md:pl-[70px] md:pr-[67px] box-border relative max-w-full gap-5 z-[1] text-29xl text-neutral-100 lg:flex-wrap lg:top-[-130px] top-[-180px]"
           >
             <!-- Image Section -->
             <div
@@ -1363,31 +1144,30 @@
             <h1
               class="m-0 relative text-inherit tracking-[-0.5px] font-bold font-[inherit] inline-block max-w-full z-[2] lg:flex-1 text-center lg:text-left"
             >
-              <p class="m-0 text-2xl sm:text-2xl md:text-4xl lg:text-5xl">
-                Subscribe for
-              </p>
-              <p class="m-0 text-2xl sm:text-2xl md:text-4xl lg:text-5xl">
-                Offer Updates
+              <p
+                class="m-0 text-2xl text-center sm:text-2xl md:text-4xl lg:text-5xl"
+              >
+                Subscribe for Offer Updates
               </p>
             </h1>
 
             <!-- Form Section -->
             <div
-              class="w-[570px] flex flex-col items-center justify-start pt-[21.5px] px-0 pb-0 box-border max-w-full text-[20.4px] text-gray-1100 mx-auto sm:mt- lg:mt-0 sm:px-4"
+              class="w-[570px] flex flex-col items-center justify-start pt-[21.5px] px-10 md:px-0 pb-0 box-border max-w-full text-[20.4px] text-gray-1100 mx-auto sm:mt- lg:mt-0 sm:px-4"
             >
               <div
-                class="self-stretch rounded-lg bg-whitesmoke overflow-hidden flex flex-col sm:flex-row items-center justify-between py-3.5 px-6 gap-5 z-[2]"
+                class="self-stretch rounded-lg text-sm bg-whitesmoke overflow-hidden flex flex-row items-center justify-between py-3.5 px-6 gap-5 z-[2]"
               >
                 <!-- Label Section -->
                 <div
-                  class="flex flex-col items-center justify-start pt-[13px] px-0 pb-0 text-center"
+                  class="flex flex-col items-center justify-start px-0 pb-0 text-center"
                 >
                   <div class="relative">Enter Your Email</div>
                 </div>
 
                 <!-- Submit Button -->
                 <button
-                  class="cursor-pointer [border:none] py-[15px] px-[47px] bg-mediumslateblue-200 rounded-md flex flex-row items-start justify-center hover:bg-mediumslateblue-100"
+                  class="cursor-pointer [border:none] md:py-[15px] md:px-[47px] px-[15px] py-[10px] bg-mediumslateblue-200 rounded-md flex flex-row items-start justify-center hover:bg-mediumslateblue-100"
                 >
                   <div
                     class="relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center inline-block min-w-[56px]"
@@ -1408,135 +1188,95 @@
       />
 
       <footer
-        class="self-stretch shadow-[0px_-5px_47px_rgba(0,_0,_0,_0.11)] bg-neutral-100 overflow-hidden flex flex-col items-start justify-start pt-[79.7px] px-[100px] pb-[30.3px] box-border gap-[97.3px] shrink-0 max-w-full z-[1] mt-[-222.7px] text-left text-lg text-darkslategray-100 font-website-body-body-large-regular"
+        class="self-stretch bg-white overflow-hidden flex flex-col items-start justify-start pt-[79.7px] px-[50px] pb-[30.3px] box-border gap-[97.3px] shrink-0 max-w-full z-50 mt-[-200px] text-left text-lg text-darkslategray-100 font-website-body-body-large-regular"
       >
+        <!-- Top Section -->
         <div
-          class="w-full flex flex-col md:flex-row items-start justify-between gap-5 md:gap-10"
+          class="flex flex-col md:flex-row w-full justify-between gap-10 md:gap-16"
         >
-          <div
-            class="w-full md:w-[380px] flex flex-col items-start justify-start gap-[36.4px] max-w-full"
-          >
-            <div
-              class="self-stretch flex flex-col items-start justify-start gap-[12.3px]"
-            >
-              <img
-                class="w-[206px] h-[67px] relative object-cover"
-                alt=""
-                src="/public/image-1-22@2x.png"
-              />
-              <div class="relative leading-[26px]">
-                Fasten Connect is a secure, real-time healthcare data sharing
-                platform for providers and patients.
-              </div>
-            </div>
-            <div class="flex flex-row items-start justify-start py-0 px-[11px]">
-              <div
-                class="w-[28.3px] flex flex-row items-start justify-start gap-3"
-              >
-                <img
-                  class="h-[28.3px] w-[28.3px] relative"
-                  loading="lazy"
-                  alt=""
-                  src="/public/vector.svg"
-                />
-                <img
-                  class="h-[26.9px] w-[26.9px] relative"
-                  alt=""
-                  src="/public/vector-1.svg"
-                />
-                <img
-                  class="h-[28.3px] w-[28.3px] relative"
-                  alt=""
-                  src="/public/vector-2.svg"
-                />
-                <img
-                  class="h-[26.9px] w-[26.9px] relative"
-                  alt=""
-                  src="/public/vector-3.svg"
-                />
-              </div>
+          <!-- Left Section -->
+          <div class="w-full md:w-1/3 flex flex-col items-start gap-6">
+            <img
+              class="w-40 h-auto"
+              alt="Logo"
+              src="/public/image-1-22@2x.png"
+            />
+            <p class="text-darkslategray-100 text-sm md:text-base leading-6">
+              Fasten Connect is a secure, real-time healthcare data sharing
+              platform for providers and patients.
+            </p>
+            <div class="flex items-center gap-4">
+              <img class="w-7 h-7" alt="Icon 1" src="/public/vector.svg" />
+              <img class="w-7 h-7" alt="Icon 2" src="/public/vector-1.svg" />
+              <img class="w-7 h-7" alt="Icon 3" src="/public/vector-2.svg" />
+              <img class="w-7 h-7" alt="Icon 4" src="/public/vector-3.svg" />
             </div>
           </div>
 
-          <div
-            class="flex flex-col md:flex-row items-start justify-between gap-[46px] text-lgi-4 text-gray-1200 mr-24"
-          >
-            <div class="flex flex-col items-start justify-start gap-[25px]">
-              <b class="relative text-base-7 leading-[23.7px] text-gray-500"
-                >Company</b
+          <!-- Links Section -->
+          <div class="w-full md:w-2/3 grid grid-cols-2 sm:grid-cols-4 gap-8">
+            <div class="flex flex-col gap-4">
+              <b class="text-gray-500 text-sm md:text-base">Company</b>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >About</a
               >
-              <div class="relative leading-[27.1px]">About</div>
-              <div class="relative leading-[27.1px] inline-block min-w-[78px]">
-                Careers
-              </div>
-              <div class="relative leading-[27.1px] inline-block min-w-[126px]">
-                Brand Center
-              </div>
-              <div class="relative leading-[27.1px] inline-block min-w-[42px]">
-                Blog
-              </div>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Careers</a
+              >
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Brand Center</a
+              >
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Blog</a
+              >
             </div>
-            <div class="flex flex-col items-start justify-start gap-[25px]">
-              <b
-                class="relative text-base-7 leading-[23.7px] inline-block text-gray-500 min-w-[90px]"
-                >Help center</b
+            <div class="flex flex-col gap-4">
+              <b class="text-gray-500 text-sm md:text-base">Help Center</b>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Discord Server</a
               >
-              <div class="relative leading-[27.1px]">Discord Server</div>
-              <div class="relative leading-[27.1px]">Reddit</div>
-              <div class="relative leading-[27.1px]">GitHub</div>
-              <div class="relative leading-[27.1px]">Contact</div>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Reddit</a
+              >
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >GitHub</a
+              >
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Contact</a
+              >
             </div>
-            <div
-              class="w-[146px] flex flex-col items-start justify-start gap-8 text-base-7 text-gray-500"
-            >
-              <b class="relative leading-[23.7px] inline-block min-w-[43px]"
-                >Legal</b
+            <div class="flex flex-col gap-4">
+              <b class="text-gray-500 text-sm md:text-base">Legal</b>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Privacy Policy</a
               >
-              <div
-                class="self-stretch flex flex-col items-start justify-start py-0 pl-0 pr-[15px] gap-8 text-right text-lgi text-dimgray-300"
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Terms</a
               >
-                <div
-                  class="self-stretch relative tracking-[0.2px] leading-[19px] whitespace-nowrap"
-                >
-                  Privacy Policy
-                </div>
-                <div class="relative tracking-[0.2px] leading-[19px]">
-                  Terms
-                </div>
-                <div
-                  class="w-[104px] relative text-lg tracking-[0.2px] leading-[19px] flex items-center"
-                >
-                  Compliance
-                </div>
-              </div>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Compliance</a
+              >
             </div>
-            <div class="flex flex-col items-start justify-start gap-[25px]">
-              <b
-                class="relative text-base-7 leading-[23.7px] inline-block text-gray-500 min-w-[78px]"
-                >Download</b
+            <div class="flex flex-col gap-4">
+              <b class="text-gray-500 text-sm md:text-base">Download</b>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Windows</a
               >
-              <div class="relative leading-[27.1px] inline-block min-w-[76px]">
-                Window
-              </div>
-              <div class="relative leading-[27.1px]">MacOS</div>
-              <div class="relative leading-[27.1px]">Docker</div>
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >MacOS</a
+              >
+              <a href="#" class="text-darkslategray-100 text-sm md:text-base"
+                >Docker</a
+              >
             </div>
           </div>
         </div>
 
-        <div
-          class="self-stretch flex flex-col items-start justify-start gap-[32.7px] text-xl text-black font-space-grotesk"
-        >
-          <div
-            class="self-stretch h-px relative border-darkgray border-t-[1px] border-solid box-border"
-          ></div>
-          <div
-            class="self-stretch flex flex-row items-start justify-start py-0 px-4 sm:px-18 md:px-[411px] shrink-0"
-          >
-            <div class="relative leading-[24px] text-center md:ml-96">
-              © 2022 Fasten Health™. All Rights Reserved.
-            </div>
-          </div>
+        <!-- Bottom Section -->
+        <div class="w-full border-t border-darkgray pt-4">
+          <p class="text-center text-sm md:text-base text-black">
+            © 2022 Fasten Health™. All Rights Reserved.
+          </p>
         </div>
       </footer>
     </div>

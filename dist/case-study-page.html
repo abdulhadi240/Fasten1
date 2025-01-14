@@ -7,87 +7,131 @@
     <link rel="stylesheet" href="/about-page.689f5f05.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400&display=swap">
+    <script src="/case-study-page.672d4772.js"></script>
+
+    <style>@media (width <= 1024px) {
+  h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (width <= 767px) {
+  h1 {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+}
+</style>
   </head>
   <body>
     <div class="w-full relative bg-neutral-100 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
       <main class="self-stretch flex flex-col items-start justify-start pt-0 px-0 pb-[100px] md:pb-0 box-border gap-[100px] shrink-0 max-w-full mq1225:pb-[88px] mq1225:box-border mq450:gap-[25px] mq450:pb-[37px] mq450:box-border mq750:gap-[50px] mq1050:pb-[57px] mq1050:box-border">
         <section class="self-stretch flex flex-col items-start justify-start gap-[50px] max-w-full text-center text-33xl text-neutral-100 font-website-body-body-large-regular mq750:gap-[25px]">
           <div class="self-stretch flex flex-col items-start justify-start max-w-full">
-          <header class="self-stretch flex flex-row items-center justify-center py-[30px] px-5 box-border max-w-full text-left text-base text-midnightblue font-website-body-body-large-regular mq750:gap-11 mq450:gap-[22px] mq1225:gap-[88px] relative">
-            <div class="w-[1240px] flex flex-row items-center justify-between gap-5 max-w-full mq1050:w-[641px]">
-              <!-- Logo -->
-              <img class="h-11 w-[135px] relative object-cover" loading="lazy" alt="Logo" src="/image-1@2x.678ae692.png">
-          
-              <!-- Desktop Navigation (Unchanged) -->
-              <div class="hidden md:flex w-[599px] flex-row items-start justify-center py-0 px-0 box-border gap-10 max-w-full mq750:gap-5 mq1050:hidden">
-                <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">Home</a>
-                <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">About</a>
-                <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit] whitespace-nowrap">Patients</a>
-                <a class="[text-decoration:none] relative leading-[20px] font-bold text-[inherit]">How It Works</a>
-                <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">FAQs</a>
-                <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">For Business</a>
+          <header class="self-stretch flex flex-row items-center justify-between py-4 px-[70px] box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 mq1400:pl-[35px] mq1400:pr-[35px] mq1400:box-border">
+            <div class="flex items-center sm:ml-0 ml-[-35px]">
+              <img class="h-11 object-cover" loading="lazy" alt="Logo" src="/image-1@2x.678ae692.png">
+            </div>
+
+            <!-- Navigation Links (Desktop Only) -->
+            <nav class="hidden md:flex flex-row items-center gap-8 relative">
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="/">Home</a>
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="/about-page.html">About</a>
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="/resources-page.html">Resources</a>
+
+              <!-- Dropdown Menu -->
+              <div class="relative group">
+                <a class="[text-decoration:none] font-medium text-midnightblue flex items-center gap-1">
+                  How It Works
+                  <svg class="w-4 h-4 transform group-hover:rotate-180 transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </a>
+                <div class="absolute hidden group-hover:block top-full left-0 bg-white shadow-md rounded mt-2 w-32 z-50">
+                  <a href="#" class="block px-4 py-2 text-start text-midnightblue hover:bg-gray-100">
+                    Item 1
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-start text-midnightblue hover:bg-gray-100">
+                    Item 2
+                  </a>
+                  <a href="#" class="block px-4 py-2 text-start text-midnightblue hover:bg-gray-100">
+                    Item 3
+                  </a>
+                </div>
               </div>
-          
-              <!-- Login and Sign-Up (Unchanged) -->
-              <div class="hidden md:flex flex-row items-center justify-start gap-10">
-                <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit] inline-block min-w-[44px]">Login</a>
-                <button class="cursor-pointer [border:none] py-[15px] px-[31px] bg-mediumslateblue-200 flex-1 rounded-md flex flex-row items-center justify-center hover:bg-mediumslateblue-100">
-                  <a class="[text-decoration:none] flex-1 relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center inline-block min-w-[59px]">Sign Up</a>
+
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="/developer.html">Developer</a>
+              <a class="[text-decoration:none] font-bold text-midnightblue" href="/case-study-page.html">Case Studies</a>
+            </nav>
+
+            <!-- Login and Sign-Up Section -->
+            <div class="hidden md:flex flex-row items-center gap-5">
+              <a class="[text-decoration:none] font-medium text-midnightblue" href="#">Login</a>
+              <button class="cursor-pointer [border:none] py-2 px-6 bg-mediumslateblue-200 rounded hover:bg-mediumslateblue-100">
+                <span class="text-white font-medium">Sign Up</span>
+              </button>
+            </div>
+            <!-- Hamburger Menu (Mobile Only) -->
+            <button id="menu-toggle" class="md:hidden flex items-center justify-center text-midnightblue absolute bg-white right-6 top-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50">
+              <a href="/" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                Home
+              </a>
+              <a href="/about-page.html" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                About
+              </a>
+              <a href="/resources-page.html" class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                Resources
+              </a>
+              <div class="relative">
+                <a id="submenu-toggle" class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                  How It Works
+                  <svg id="submenu-icon" class="w-4 h-4 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                  </svg>
+                </a>
+                <div id="how-it-works-submenu" class="hidden flex-col bg-white shadow-md w-full mt-1">
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                    Item 1
+                  </a>
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                    Item 2
+                  </a>
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                    Item 3
+                  </a>
+                </div>
+              </div>
+              <a href="/developer.html" class="block w-full px-6 py-3 font-medium text-midnightblue text-left  hover:underline">
+                Developer
+              </a>
+              <a href="/case-study-page.html" class="block w-full px-6 py-3 text-midnightblue text-left font-bold hover:underline">
+                Case Studies
+              </a>
+
+              <div class="w-full flex flex-col items-stretch gap-4 mt-4">
+                <a href="#" class="text-midnightblue font-medium text-center py-2 border border-midnightblue rounded hover:bg-gray-100 transition-colors">
+                  Login
+                </a>
+                <button class="bg-mediumslateblue-200 text-white font-medium text-center py-2 rounded hover:bg-mediumslateblue-100 transition-colors">
+                  Sign Up
                 </button>
               </div>
-          
-              <!-- Mobile Hamburger Button -->
-              <button id="hamburgerMenu" class="block md:hidden text-neutral-900 focus:outline-none">
-            <div class="space-y-1.5">
-              <span class="block h-0.5 w-6 bg-current"></span>
-              <span class="block h-0.5 w-6 bg-current"></span>
-              <span class="block h-0.5 w-6 bg-current"></span>
             </div>
-          </button>
-        </div>
-      </header>
-          
-         <!-- Mobile Dropdown Menu -->
-      <div id="mobileMenu" class="hidden flex flex-col items-center justify-center gap-6 bg-white rounded-md shadow-md w-full fixed top-[80px] left-0 z-10 transition-transform duration-300 ease-in-out">
-      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center">Home</a>
-      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center">About</a>
-      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center whitespace-nowrap">Patients</a>
-      <a href="#" class="[text-decoration:none] text-lg font-bold text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center">How It Works</a>
-      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center">FAQs</a>
-      <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center">For Business</a>
-      <div class="flex flex-col items-center justify-center gap-4 mt-4 w-full">
-        <a href="#" class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 w-full text-center">Login</a>
-        <button class="cursor-pointer [border:none] py-[12px] px-[28px] bg-mediumslateblue-200 rounded-md flex-1 flex items-center justify-center hover:bg-mediumslateblue-100 w-full">
-          <a class="[text-decoration:none] text-base leading-[20px] font-medium text-neutral-100 text-center w-full">Sign Up</a>
-        </button>
-      </div>
-      </div>
-      
-          
-          <script>const hamburgerMenu = document.getElementById("hamburgerMenu");
-const mobileMenu = document.getElementById("mobileMenu");
-// Toggle mobile menu visibility
-hamburgerMenu.addEventListener("click", ()=>{
-    mobileMenu.classList.toggle("hidden");
-    mobileMenu.style.transform = mobileMenu.classList.contains("hidden") ? "translateY(-100%)" : "translateY(0)";
-});
-// Close the menu when clicking anywhere outside
-document.addEventListener("click", (event)=>{
-    if (!mobileMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
-        mobileMenu.classList.add("hidden");
-        mobileMenu.style.transform = "translateY(-100%)";
-    }
-});
-// Close the menu when clicking on any menu item
-const menuItems = mobileMenu.querySelectorAll("a, button");
-menuItems.forEach((item)=>{
-    item.addEventListener("click", ()=>{
-        mobileMenu.classList.add("hidden");
-        mobileMenu.style.transform = "translateY(-100%)";
-    });
-});
-
-</script>
+          </header>
             <div class="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
       <div class="flex-1 rounded-xl overflow-hidden flex flex-col items-center justify-start pt-[80px] px-[35px] pb-[80px] box-border relative gap-8 max-w-full
                   mq1225:pl-[70px] mq1225:pr-[70px] mq1225:box-border mq450:pt-[50px] mq450:pb-[50px] mq450:box-border mq750:pl-[35px] mq750:pr-[35px] mq750:box-border" style="background-image: url(&quot;image-2@2x.755c52b0.png&quot;); background-position: center; background-repeat: no-repeat; background-size: cover">
@@ -436,11 +480,11 @@ menuItems.forEach((item)=>{
       
       
       
-      <img class="self-stretch z-0 relative max-w-full overflow-hidden max-h-full object-cover shrink-0" alt="" src="/image-1-12@2x.407233c2.png">
+      
 
-      <footer class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-start pt-[79.7px] px-[50px] pb-[30.3px] box-border gap-[97.3px] shrink-0 max-w-full z-50 mt-[-200px]  text-left text-lg text-darkslategray-100 font-website-body-body-large-regular">
-  <!-- Top Section -->
-  <div class="flex flex-col md:flex-row w-full justify-between gap-10 md:gap-16">
+    <footer class="self-stretch  bg-white  overflow-hidden flex flex-col items-start justify-start pt-[79.7px] px-[50px] pb-[30.3px] box-border gap-[97.3px] shrink-0 max-w-full z-50  text-left text-lg text-darkslategray-100 font-website-body-body-large-regular">
+    <!-- Top Section -->
+    <div class="flex flex-col md:flex-row w-full justify-between gap-10 md:gap-16">
     <!-- Left Section -->
     <div class="w-full md:w-1/3 flex flex-col items-start gap-6">
       <img class="w-40 h-auto" alt="Logo" src="/image-1-22@2x.ec97dbe3.png">
@@ -454,7 +498,7 @@ menuItems.forEach((item)=>{
         <img class="w-7 h-7" alt="Icon 4" src="/vector-3.449d1002.svg">
       </div>
     </div>
-
+    
     <!-- Links Section -->
     <div class="w-full md:w-2/3 grid grid-cols-2 sm:grid-cols-4 gap-8">
       <div class="flex flex-col gap-4">
@@ -484,15 +528,15 @@ menuItems.forEach((item)=>{
         <a href="#" class="text-darkslategray-100 text-sm md:text-base">Docker</a>
       </div>
     </div>
-  </div>
-
-  <!-- Bottom Section -->
-  <div class="w-full border-t border-darkgray pt-4">
+    </div>
+    
+    <!-- Bottom Section -->
+    <div class="w-full border-t border-darkgray pt-4">
     <p class="text-center text-sm md:text-base text-black">
       © 2022 Fasten Health™. All Rights Reserved.
     </p>
-  </div>
-</footer>
+    </div>
+    </footer>
 
     
     

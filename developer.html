@@ -13,6 +13,33 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400&display=swap"
     />
+    <script src="script.js"></script>
+
+    <style>
+      /* No changes to Desktop view */
+
+      /* Tablet View (max-width: 1024px) */
+      @media (max-width: 1024px) {
+        h1 {
+          font-size: 2rem; /* Adjust font size for tablet */
+          line-height: 2.5rem; /* Adjust line height for tablet */
+          text-align: center; /* Center the text for tablets */
+          width: 100%; /* Ensure full width for mobile */
+          margin: 0 auto; /* Center the heading within its container */
+        }
+      }
+
+      /* Mobile View (max-width: 767px) */
+      @media (max-width: 767px) {
+        h1 {
+          font-size: 1.5rem; /* Adjust font size for mobile */
+          line-height: 2rem; /* Adjust line height for mobile */
+          text-align: center; /* Center the text for mobile */
+          width: 100%; /* Ensure full width for mobile */
+          margin: 0 auto; /* Center the heading within its container */
+        }
+      }
+    </style>
   </head>
   <body>
     <div
@@ -24,119 +51,220 @@
         <section
           class="self-stretch flex flex-col items-start justify-start max-w-full text-left text-33xl text-neutral-100 font-website-body-body-large-regular"
         >
-        <header class="self-stretch flex flex-row items-center justify-center py-[30px] px-5 box-border max-w-full text-left text-base text-midnightblue font-website-body-body-large-regular mq750:gap-11 mq450:gap-[22px] mq1225:gap-[88px] relative">
-          <div class="w-[1240px] flex flex-row items-center justify-between gap-5 max-w-full mq1050:w-[641px]">
-            <!-- Logo -->
-            <img class="h-11 w-[135px] relative object-cover" loading="lazy" alt="Logo" src="/public/image-1@2x.png" />
-        
-            <!-- Desktop Navigation (Unchanged) -->
-            <div class="hidden md:flex w-[599px] flex-row items-start justify-center py-0 px-0 box-border gap-10 max-w-full mq750:gap-5 mq1050:hidden">
-              <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">Home</a>
-              <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">About</a>
-              <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit] whitespace-nowrap">Why Fasten (Case Studies)</a>
-              <a class="[text-decoration:none] relative leading-[20px] font-bold text-[inherit]">Developers</a>
-              <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit]">Resources</a>
+        <header
+            class="self-stretch flex flex-row items-center justify-between py-4 px-[70px] box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 mq1400:pl-[35px] mq1400:pr-[35px] mq1400:box-border"
+          >
+            <div class="flex items-center sm:ml-0 ml-[-35px]">
+              <img
+                class="h-11 object-cover"
+                loading="lazy"
+                alt="Logo"
+                src="/public/image-1@2x.png"
+              />
             </div>
-        
-            <!-- Login and Sign-Up (Unchanged) -->
-            <div class="hidden md:flex flex-row items-center justify-start gap-10">
-              <a class="[text-decoration:none] relative leading-[20px] font-medium text-[inherit] inline-block min-w-[44px]">Login</a>
-              <button class="cursor-pointer [border:none] py-[15px] px-[31px] bg-mediumslateblue-200 flex-1 rounded-md flex flex-row items-center justify-center hover:bg-mediumslateblue-100">
-                <a class="[text-decoration:none] flex-1 relative text-base leading-[20px] font-medium font-website-body-body-large-regular text-neutral-100 text-center inline-block min-w-[59px]">Sign Up</a>
+
+            <!-- Navigation Links (Desktop Only) -->
+            <nav class="hidden md:flex flex-row items-center gap-8 relative">
+              <a
+                class="[text-decoration:none] font-medium text-midnightblue"
+                href="/"
+                >Home</a
+              >
+              <a
+                class="[text-decoration:none] font-medium text-midnightblue"
+                href="/about-page.html"
+                >About</a
+              >
+              <a
+                class="[text-decoration:none] font-medium text-midnightblue"
+                href="/resources-page.html"
+                >Resources</a
+              >
+
+              <!-- Dropdown Menu -->
+              <div class="relative group">
+                <a
+                  class="[text-decoration:none] font-medium  text-midnightblue flex items-center gap-1"
+                >
+                  How It Works
+                  <svg
+                    class="w-4 h-4 transform group-hover:rotate-180 transition-transform"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+                <div
+                  class="absolute hidden group-hover:block top-full left-0 bg-white shadow-md rounded mt-2 w-48 z-50"
+                >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
+                  >
+                    Item 1
+                  </a>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
+                  >
+                    Item 2
+                  </a>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
+                  >
+                    Item 3
+                  </a>
+                </div>
+              </div>
+
+              <a
+                class="[text-decoration:none] font-bold text-midnightblue"
+                href="/developer.html"
+                >Developer</a
+              >
+              <a
+                class="[text-decoration:none] font-medium text-midnightblue"
+                href="/case-study-page.html"
+                >Case Studies</a
+              >
+            </nav>
+
+            <!-- Login and Sign-Up Section -->
+            <div class="hidden md:flex flex-row items-center gap-5">
+              <a
+                class="[text-decoration:none] font-medium text-midnightblue"
+                href="#"
+                >Login</a
+              >
+              <button
+                class="cursor-pointer [border:none] py-2 px-6 bg-mediumslateblue-200 rounded hover:bg-mediumslateblue-100"
+              >
+                <span class="text-white font-medium">Sign Up</span>
               </button>
             </div>
-        
-            <!-- Mobile Hamburger Button -->
+            <!-- Hamburger Menu (Mobile Only) -->
             <button
-          id="hamburgerMenu"
-          class="block md:hidden text-neutral-900 focus:outline-none"
-        >
-          <div class="space-y-1.5">
-            <span class="block h-0.5 w-6 bg-current"></span>
-            <span class="block h-0.5 w-6 bg-current"></span>
-            <span class="block h-0.5 w-6 bg-current"></span>
-          </div>
-        </button>
-      </div>
-    </header>
-        
-       <!-- Mobile Dropdown Menu -->
-    <div
-    id="mobileMenu"
-    class="hidden flex flex-col items-center justify-center gap-6 bg-white rounded-md shadow-md w-full fixed top-[80px] left-0 z-10 transition-transform duration-300 ease-in-out"
-    >
-    <a
-      href="#"
-      class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center"
-      >Home</a
-    >
-    <a
-      href="#"
-      class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center"
-      >About</a
-    >
-    <a
-      href="#"
-      class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center whitespace-nowrap"
-      >Why Fasten (Case Studies)</a
-    >
-    <a
-      href="#"
-      class="[text-decoration:none] text-lg font-bold text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center"
-      >Developers</a
-    >
-    <a
-      href="#"
-      class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 hover:bg-mediumslateblue-100 w-full text-center"
-      >Resources</a
-    >
-    <div class="flex flex-col items-center justify-center gap-4 mt-4 w-full">
-      <a
-        href="#"
-        class="[text-decoration:none] text-lg font-medium text-midnightblue py-3 w-full text-center"
-        >Login</a
-      >
-      <button
-        class="cursor-pointer [border:none] py-[12px] px-[28px] bg-mediumslateblue-200 rounded-md flex-1 flex items-center justify-center hover:bg-mediumslateblue-100 w-full"
-      >
-        <a
-          class="[text-decoration:none] text-base leading-[20px] font-medium text-neutral-100 text-center w-full"
-          >Sign Up</a
-        >
-      </button>
-    </div>
-    </div>
-    
-        
-        <script>
-          const hamburgerMenu = document.getElementById("hamburgerMenu");
-          const mobileMenu = document.getElementById("mobileMenu");
-        
-          // Toggle mobile menu visibility
-          hamburgerMenu.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-            mobileMenu.style.transform = mobileMenu.classList.contains("hidden")
-              ? "translateY(-100%)"
-              : "translateY(0)";
-          });
-        
-          // Close the menu when clicking anywhere outside
-          document.addEventListener("click", (event) => {
-            if (!mobileMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
-              mobileMenu.classList.add("hidden");
-              mobileMenu.style.transform = "translateY(-100%)";
-            }
-          });
-        
-          // Close the menu when clicking on any menu item
-          const menuItems = mobileMenu.querySelectorAll("a, button");
-          menuItems.forEach((item) => {
-            item.addEventListener("click", () => {
-              mobileMenu.classList.add("hidden");
-              mobileMenu.style.transform = "translateY(-100%)";
-            });
-          });
-        </script>
+              id="menu-toggle"
+              class="md:hidden flex items-center justify-center bg-transparent text-midnightblue absolute right-1 top-6"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div
+              id="mobile-menu"
+              class="md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50"
+            >
+              <a
+                href="/"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+              >
+                Home
+              </a>
+              <a
+                href="/about-page.html"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+              >
+                About
+              </a>
+              <a
+                href="/resources-page.html"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+              >
+                Resources
+              </a>
+              <div class="relative">
+                <a
+                  id="submenu-toggle"
+                  class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                >
+                  How It Works
+                  <svg
+                    id="submenu-icon"
+                    class="w-4 h-4 transform transition-transform"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </a>
+                <div
+                  id="how-it-works-submenu"
+                  class="hidden flex-col bg-white shadow-md w-full mt-1"
+                >
+                  <a
+                    href="#"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                  >
+                    Item 1
+                  </a>
+                  <a
+                    href="#"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                  >
+                    Item 2
+                  </a>
+                  <a
+                    href="#"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                  >
+                    Item 3
+                  </a>
+                </div>
+              </div>
+              <a
+                href="/developer.html"
+                class="block w-full px-6 py-3 font-bold text-midnightblue text-left  hover:underline"
+              >
+                Developer
+              </a>
+              <a
+                href="/case-study-page.html"
+                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+              >
+                Case Studies
+              </a>
+
+              <div class="w-full flex flex-col items-stretch gap-4 mt-4">
+                <a
+                  href="#"
+                  class="text-midnightblue font-medium text-center py-2 border border-midnightblue rounded hover:bg-gray-100 transition-colors"
+                >
+                  Login
+                </a>
+                <button
+                  class="bg-mediumslateblue-200 text-white font-medium text-center py-2 rounded hover:bg-mediumslateblue-100 transition-colors"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </header>
 <div class="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
   <div class="flex-1 rounded-xl overflow-hidden flex flex-col items-center justify-start pt-[80px] px-[35px] pb-[80px] box-border relative gap-8 max-w-full"
               style="background-image: url('/public/image-2@2x.png');
@@ -416,57 +544,93 @@
 </section>
 <section class="self-stretch flex flex-col items-center justify-center py-0 px-5 box-border max-w-full text-center text-33xl text-black font-website-body-body-large-regular">
   <div class="w-full md:w-[1240px] flex flex-col items-center justify-start pt-0 px-0 pb-0 box-border gap-[30px] md:gap-[60px] max-w-full z-[1]">
-      <h1 class="m-0 self-stretch relative text-inherit leading-[35px] md:leading-[58px] font-bold font-[inherit] text-2xl md:text-33xl">
+      <h1 class="m-0 self-stretch relative text-inherit leading-[40px] md:leading-[30px] font-bold font-[inherit] text-2xl md:text-33xl">
           Frequently asked questions
       </h1>
-      <div class="flex flex-col items-start justify-start pt-0 px-0 pb-0 box-border gap-4 md:gap-7 max-w-full text-left text-2xl md:text-4xl-6 text-gray-100 w-full md:w-[1034px]">
+      
+      <section class="">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+                <div
+                    class="transition-all duration-200 shadow-lg cursor-pointer ">
+                    <button type="button" id="question1" data-state="opened" class="flex items-center bg-white justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg text-start text-black">How can I get started?</span>
+                        <svg id="arrow1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="answer1" style="display:block" class="px-4 pb-5 text-sm text-start sm:px-6 sm:pb-6">
+                        <p class="text-xs">Getting started is easy! Sign up for an account, and you'll have access to our platform's
+                            features. No credit card required for the initial signup.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+                    <button type="button" id="question2" data-state="closed" class="flex items-center bg-white justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg text-start text-black">What is the pricing structure?</span>
+                        <svg id="arrow2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="answer2" style="display:none" class="px-4 pb-5 sm:px-6 text-sm text-start sm:pb-6">
+                        <p>Our pricing structure is flexible. We offer both free and paid plans. You can choose the one
+                            that
+                            suits your needs and budget.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+                    <button type="button" id="question3" data-state="closed" class="flex items-center bg-white justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg text-start text-black">What kind of support do you provide?</span>
+                        <svg id="arrow3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="answer3" style="display:none" class="px-4 pb-5 sm:px-6 text-sm text-start sm:pb-6">
+                        <p>We offer comprehensive customer support. You can reach out to our support team through
+                            various
+                            channels, including email, chat, and a knowledge base.</p>
+                    </div>
+                </div>
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+                    <button type="button" id="question4" data-state="closed" class="flex items-center bg-white justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg text-start text-black">Can I cancel my subscription anytime?</span>
+                        <svg id="arrow4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            class="w-6 h-6 text-gray-400">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div id="answer4" style="display:none" class="px-4 pb-5 sm:px-6 text-start text-sm sm:pb-6">
+                        <p>Yes, you can cancel your subscription at any time without any hidden fees. We believe in
+                            providing a hassle-free experience for our users.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <script>
+            // JavaScript to toggle the answers and rotate the arrows
+            document.querySelectorAll('[id^="question"]').forEach(function(button, index) {
+                button.addEventListener('click', function() {
+                    var answer = document.getElementById('answer' + (index + 1));
+                    var arrow = document.getElementById('arrow' + (index + 1));
+    
+                    if (answer.style.display === 'none' || answer.style.display === '') {
+                        answer.style.display = 'block';
+                        arrow.style.transform = 'rotate(0deg)';
+                    } else {
+                        answer.style.display = 'none';
+                        arrow.style.transform = 'rotate(-180deg)';
+                    }
+                });
+            });
+        </script>
+    </section>
 
-          <div class="w-full shadow-[0px_5.4px_17.2px_rgba(8,_15,_52,_0.06)] rounded-mid-2 bg-neutral-100 flex flex-col items-start justify-start py-[20px] md:py-[30px] px-[20px] md:px-[29px] box-border transition ease-[cubic-bezier(0.4,_0,_0.2,_1)] duration-[150ms] cursor-pointer" data-acc-item data-acc-open data-acc-header data-acc-original data-acc-default-open>
-              <div class="w-full flex flex-row items-start justify-between">
-                  <div class="w-full md:w-[906px] flex flex-col items-start justify-start gap-2 md:gap-3">
-                      <div class="w-full md:w-[602px] relative leading-[24px] md:leading-[30.1px] font-medium inline-block shrink-0 text-lg md:text-inherit">
-                          How secure is my health data with Fasten Connect?
-                      </div>
-                      <div class="w-full grid grid-rows-[1fr] transition ease-[cubic-bezier(0.4,_0,_0.2,_1)] duration-[150ms] text-base md:text-lgi-3 text-dimgray-100 accordion__open:grid-rows-[1fr] accordion__close:grid-rows-[0fr]" data-acc-content>
-                          <div class="w-full transition ease-[cubic-bezier(0.4,_0,_0.2,_1)] duration-[150ms] overflow-hidden">
-                              <div class="w-full relative leading-[24px] md:leading-[32.2px] font-light inline-block">
-                                  Fasten Connect makes sure that all your health data is encrypted and HIPAA-compliant, protecting your privacy and security. Your data is handled with the highest industry standards.
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="rounded-4xs-6 bg-primary-color-1 flex flex-col items-start justify-start pt-[14px] md:pt-[21px] pb-[14px] md:pb-[21.5px] pl-[8px] md:pl-[13px] pr-2 md:pr-3 box-border w-[30px] h-[30px] md:w-[44.6px] md:h-[44.6px]">
-                      <img class="w-[12px] h-[1px] md:w-[19.3px] md:h-[2.1px] relative rounded-11xs-1" loading="lazy" alt="" src="/public/vector1.svg" />
-                  </div>
-              </div>
-          </div>
-
-          <div class="w-full shadow-[0px_5.4px_17.2px_rgba(8,_15,_52,_0.06)] rounded-mid-2 bg-neutral-100 flex flex-col items-start justify-start py-[20px] md:py-[30px] px-[20px] md:px-[29px] box-border transition ease-[cubic-bezier(0.4,_0,_0.2,_1)] duration-[150ms] cursor-pointer" data-acc-item data-acc-header data-acc-original>
-              <div class="w-full flex flex-row items-center justify-between">
-                  <div class="w-full md:w-[466px] flex flex-col items-start justify-start">
-                      <div class="w-full md:w-[602px] relative leading-[24px] md:leading-[30.1px] font-medium inline-block text-lg md:text-inherit">
-                          How do I get started with Fasten Connect?
-                      </div>
-                  </div>
-                  <div class="h-[30px] w-[30px] md:h-[44.6px] md:w-[44.6px] rounded-4xs-6 bg-ghostwhite-100 flex flex-row items-center justify-start pt-[8px] md:pt-[12.6px] pb-[8px] md:pb-[12.7px] pl-[8px] md:pl-[13px] pr-2 md:pr-3 box-border">
-                      <img class="h-[12px] w-[12px] md:h-[19.3px] md:w-[19.3px] relative" loading="lazy" alt="" src="/public/frame-1707480674.svg" />
-                  </div>
-              </div>
-          </div>
-
-          <div class="w-full shadow-[0px_5.4px_17.2px_rgba(8,_15,_52,_0.06)] rounded-mid-2 bg-neutral-100 flex flex-col items-start justify-start py-[20px] md:py-[30px] px-[20px] md:px-[29px] box-border transition ease-[cubic-bezier(0.4,_0,_0.2,_1)] duration-[150ms] cursor-pointer" data-acc-item data-acc-header data-acc-original>
-              <div class="w-full flex flex-row items-center justify-between">
-                  <div class="w-full md:w-[466px] flex flex-col items-start justify-start">
-                      <div class="w-full md:w-[530px] relative leading-[24px] md:leading-[30.1px] font-medium inline-block shrink-0 text-lg md:text-inherit">
-                          Is Fasten Connect available on mobile devices?
-                      </div>
-                  </div>
-                  <div class="h-[30px] w-[30px] md:h-[44.6px] md:w-[44.6px] rounded-4xs-6 bg-ghostwhite-100 flex flex-row items-center justify-start pt-[8px] md:pt-[12.6px] pb-[8px] md:pb-[12.7px] pl-[8px] md:pl-[13px] pr-2 md:pr-3 box-border">
-                      <img class="h-[12px] w-[12px] md:h-[19.3px] md:w-[19.3px] relative" loading="lazy" alt="" src="/public/frame-1707480674.svg" />
-                  </div>
-              </div>
-          </div>
-      </div>
   </div>
 </section>
       </main>
@@ -540,61 +704,5 @@ class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-
 </div>
 </footer>
   </div>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const defaultOpenItems = document.querySelectorAll(
-          "[data-acc-item][data-acc-default-open]"
-        );
-        const originalDisplay = "flex";
-        const siblingDisplay = "flex";
-      
-        const openClasses = ["grid-rows-[1fr]"];
-        const closeClasses = ["pt-0", "pb-0", "mb-0", "mt-0", "grid-rows-[0fr]"];
-      
-        defaultOpenItems.forEach((item) => {
-          const accContent = item.querySelector("[data-acc-content]");
-      
-          accContent?.classList.remove(...closeClasses);
-          accContent?.classList.add(...openClasses);
-        });
-        const elements = document.querySelectorAll("[data-acc-header]");
-        function handleAccordionClick(element) {
-          const accItem = element.closest("[data-acc-item]") || element;
-          const accContent = accItem.querySelector("[data-acc-content]");
-      
-          const isOpen = accItem.hasAttribute("data-acc-open");
-          const isOriginal = accItem.hasAttribute("data-acc-original");
-          const siblingAccItem = isOriginal
-            ? accItem.nextElementSibling
-            : accItem.previousElementSibling;
-      
-          if (isOpen) {
-            accContent?.classList.remove(...openClasses);
-            accContent?.classList.add(...closeClasses);
-      
-            setTimeout(() => {
-              accItem.style.display = "none";
-              siblingAccItem.style.display = siblingDisplay;
-            }, 100);
-          } else {
-            accItem.style.display = "none";
-            siblingAccItem.style.display = originalDisplay;
-            const siblingAccContent =
-              siblingAccItem.querySelector("[data-acc-content]");
-            setTimeout(() => {
-              siblingAccContent?.classList.remove(...closeClasses);
-              siblingAccContent?.classList.add(...openClasses);
-            }, 1);
-          }
-        }
-      
-        elements.forEach((element) => {
-          element.addEventListener("click", function () {
-            handleAccordionClick(element);
-          });
-        });
-      });
-      </script>
   </body>
 </html>
