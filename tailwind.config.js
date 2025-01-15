@@ -109,6 +109,7 @@ module.exports = {
       "7xl": "26px",
       inherit: "inherit",
     },
+    
    
     
   },

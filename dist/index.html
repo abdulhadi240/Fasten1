@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@400&display=swap">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <script src="/case-study-page.672d4772.js"></script>
+    <script src="/about-page.672d4772.js"></script>
     <style>@media (width <= 768px) {
   .absolute.top-\[322px\].left-\[71px\] {
     width: 90%;
@@ -63,10 +63,10 @@
   </head>
   <body>
     <div class="mt-4 w-full relative bg-neutral-100 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]">
-      <section class="mt-4 self-stretch flex flex-row items-start justify-start py-0 px-[30px] box-border max-w-full text-left text-base text-silver-200 font-website-body-body-large-regular">
+      <section class="mt-4 self-stretch flex flex-row items-start justify-start py-0 md:px-[30px] px-[6px] box-border max-w-full text-left text-base text-silver-200 font-website-body-body-large-regular">
         <div class="flex-1 flex flex-col items-start justify-start gap-[3px] max-w-full">
-          <header class="self-stretch flex flex-row items-center justify-between py-4 px-[70px] box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 mq1400:pl-[35px] mq1400:pr-[35px] mq1400:box-border">
-            <div class="flex items-center sm:ml-0 ml-[-35px]">
+          <header class="self-stretch flex flex-row items-center justify-between md:py-4 box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 ">
+            <div class="flex items-center sm:ml-0 md:ml-[-35px]">
               <img class="h-11 object-cover" loading="lazy" alt="Logo" src="/image-1@2x.678ae692.png">
             </div>
 
@@ -109,14 +109,15 @@
               </button>
             </div>
             <!-- Hamburger Menu (Mobile Only) -->
-            <button id="menu-toggle" class="md:hidden flex items-center justify-center text-midnightblue absolute right-1 top-6">
+            <button id="menu-toggle" class="md:hidden flex items-center justify-center text-midnightblue absolute right-1">
               <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M4 6h16M4 12h16M4 18h16"></path>
               </svg>
             </button>
 
+        
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50">
+            <div id="mobile-menu" class="md:hidden flex flex-col bg-white shadow-md py-10 w-3/4 h-full fixed top-0 left-0 z-50 transform -translate-x-full transition-transform duration-300">
               <a href="/" class="block w-full px-6 py-3 text-midnightblue text-left font-bold hover:underline">
                 Home
               </a>
@@ -127,20 +128,20 @@
                 Resources
               </a>
               <div class="relative">
-                <a id="submenu-toggle" class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                <a id="submenu-toggle" class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium cursor-pointer hover:underline">
                   How It Works
                   <svg id="submenu-icon" class="w-4 h-4 transform transition-transform" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                   </svg>
                 </a>
-                <div id="how-it-works-submenu" class="hidden flex-col bg-white shadow-md w-full mt-1">
-                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                <div id="how-it-works-submenu" class="hidden flex-col bg-white shadow-md rounded w-full mt-1">
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
                     Item 1
                   </a>
-                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
                     Item 2
                   </a>
-                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline">
+                  <a href="#" class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100">
                     Item 3
                   </a>
                 </div>

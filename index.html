@@ -83,15 +83,15 @@
       class="mt-4 w-full relative bg-neutral-100 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]"
     >
       <section
-        class="mt-4 self-stretch flex flex-row items-start justify-start py-0 px-[30px] box-border max-w-full text-left text-base text-silver-200 font-website-body-body-large-regular"
+        class="mt-4 self-stretch flex flex-row items-start justify-start py-0 md:px-[30px] px-[6px] box-border max-w-full text-left text-base text-silver-200 font-website-body-body-large-regular"
       >
         <div
           class="flex-1 flex flex-col items-start justify-start gap-[3px] max-w-full"
         >
           <header
-            class="self-stretch flex flex-row items-center justify-between py-4 px-[70px] box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 mq1400:pl-[35px] mq1400:pr-[35px] mq1400:box-border"
+            class="self-stretch flex flex-row items-center justify-between md:py-4 box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 "
           >
-            <div class="flex items-center sm:ml-0 ml-[-35px]">
+            <div class="flex items-center sm:ml-0 md:ml-[-35px]">
               <img
                 class="h-11 object-cover"
                 loading="lazy"
@@ -191,7 +191,7 @@
             <!-- Hamburger Menu (Mobile Only) -->
             <button
               id="menu-toggle"
-              class="md:hidden flex items-center justify-center text-midnightblue absolute right-1 top-6"
+              class="md:hidden flex items-center justify-center text-midnightblue absolute right-1"
             >
               <svg
                 class="w-6 h-6"
@@ -205,10 +205,11 @@
               </svg>
             </button>
 
+        
             <!-- Mobile Menu -->
             <div
               id="mobile-menu"
-              class="md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50"
+              class="md:hidden flex flex-col bg-white shadow-md py-10 w-3/4 h-full fixed top-0 left-0 z-50 transform -translate-x-full transition-transform duration-300"
             >
               <a
                 href="/"
@@ -231,7 +232,7 @@
               <div class="relative">
                 <a
                   id="submenu-toggle"
-                  class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                  class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium cursor-pointer hover:underline"
                 >
                   How It Works
                   <svg
@@ -252,23 +253,23 @@
                 </a>
                 <div
                   id="how-it-works-submenu"
-                  class="hidden flex-col bg-white shadow-md w-full mt-1"
+                  class="hidden flex-col bg-white shadow-md rounded w-full mt-1"
                 >
                   <a
                     href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
                   >
                     Item 1
                   </a>
                   <a
                     href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
                   >
                     Item 2
                   </a>
                   <a
                     href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
                   >
                     Item 3
                   </a>

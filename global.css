@@ -13,3 +13,11 @@ body {
 .marquee-container:hover .marquee-content {
   animation-play-state: paused;
 }
+
+#mobile-menu {
+  transition: transform 0.3s ease-in-out;
+}
+
+#how-it-works-submenu {
+  transition: all 0.3s ease-in-out;
+}

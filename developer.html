@@ -52,220 +52,207 @@
           class="self-stretch flex flex-col items-start justify-start max-w-full text-left text-33xl text-neutral-100 font-website-body-body-large-regular"
         >
         <header
-            class="self-stretch flex flex-row items-center justify-between py-4 px-[70px] box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 mq1400:pl-[35px] mq1400:pr-[35px] mq1400:box-border"
+        class="self-stretch flex flex-row items-center justify-between py-4 px-2 md:px-6 box-border max-w-full text-base text-midnightblue font-website-body-body-large-regular relative z-50 "
+      >
+        <div class="flex items-center sm:ml-0">
+          <img
+            class="h-11 object-cover"
+            loading="lazy"
+            alt="Logo"
+            src="/public/image-1@2x.png"
+          />
+        </div>
+    
+        <!-- Navigation Links (Desktop Only) -->
+        <nav class="hidden md:flex flex-row items-center gap-8 relative">
+          <a
+            class="[text-decoration:none] font-medium text-midnightblue"
+            href="/"
+            >Home</a
           >
-            <div class="flex items-center sm:ml-0 ml-[-35px]">
-              <img
-                class="h-11 object-cover"
-                loading="lazy"
-                alt="Logo"
-                src="/public/image-1@2x.png"
-              />
-            </div>
-
-            <!-- Navigation Links (Desktop Only) -->
-            <nav class="hidden md:flex flex-row items-center gap-8 relative">
-              <a
-                class="[text-decoration:none] font-medium text-midnightblue"
-                href="/"
-                >Home</a
-              >
-              <a
-                class="[text-decoration:none] font-medium text-midnightblue"
-                href="/about-page.html"
-                >About</a
-              >
-              <a
-                class="[text-decoration:none] font-medium text-midnightblue"
-                href="/resources-page.html"
-                >Resources</a
-              >
-
-              <!-- Dropdown Menu -->
-              <div class="relative group">
-                <a
-                  class="[text-decoration:none] font-medium  text-midnightblue flex items-center gap-1"
-                >
-                  How It Works
-                  <svg
-                    class="w-4 h-4 transform group-hover:rotate-180 transition-transform"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </a>
-                <div
-                  class="absolute hidden group-hover:block top-full left-0 bg-white shadow-md rounded mt-2 w-48 z-50"
-                >
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
-                  >
-                    Item 1
-                  </a>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
-                  >
-                    Item 2
-                  </a>
-                  <a
-                    href="#"
-                    class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
-                  >
-                    Item 3
-                  </a>
-                </div>
-              </div>
-
-              <a
-                class="[text-decoration:none] font-bold text-midnightblue"
-                href="/developer.html"
-                >Developer</a
-              >
-              <a
-                class="[text-decoration:none] font-medium text-midnightblue"
-                href="/case-study-page.html"
-                >Case Studies</a
-              >
-            </nav>
-
-            <!-- Login and Sign-Up Section -->
-            <div class="hidden md:flex flex-row items-center gap-5">
-              <a
-                class="[text-decoration:none] font-medium text-midnightblue"
-                href="#"
-                >Login</a
-              >
-              <button
-                class="cursor-pointer [border:none] py-2 px-6 bg-mediumslateblue-200 rounded hover:bg-mediumslateblue-100"
-              >
-                <span class="text-white font-medium">Sign Up</span>
-              </button>
-            </div>
-            <!-- Hamburger Menu (Mobile Only) -->
-            <button
-              id="menu-toggle"
-              class="md:hidden flex items-center justify-center bg-transparent text-midnightblue absolute right-1 top-6"
+          <a
+            class="[text-decoration:none] font-medium text-midnightblue"
+            href="/about-page.html"
+            >About</a
+          >
+          <a
+            class="[text-decoration:none] font-medium text-midnightblue"
+            href="/resources-page.html"
+            >Resources</a
+          >
+    
+          <!-- Dropdown Menu -->
+          <div class="relative group">
+            <a
+              class="[text-decoration:none] font-medium text-midnightblue flex items-center gap-1"
             >
+              How It Works
               <svg
-                class="w-6 h-6"
+                class="w-4 h-4 transform group-hover:rotate-180 transition-transform"
+                xmlns="http://www.w3.org/2000/svg"
                 fill="none"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
               >
-                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
-            </button>
-
-            <!-- Mobile Menu -->
+            </a>
             <div
-              id="mobile-menu"
-              class="md:hidden flex flex-col bg-white shadow-md w-full py-4 absolute top-full left-0 z-50"
+              class="absolute hidden group-hover:block top-full left-0 bg-white shadow-md rounded mt-2 w-48 z-50"
             >
               <a
-                href="/"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                href="#"
+                class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
               >
-                Home
+                Item 1
               </a>
               <a
-                href="/about-page.html"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                href="#"
+                class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
               >
-                About
+                Item 2
               </a>
               <a
-                href="/resources-page.html"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+                href="#"
+                class="block px-4 py-2 text-midnightblue hover:bg-gray-100"
               >
-                Resources
+                Item 3
               </a>
-              <div class="relative">
-                <a
-                  id="submenu-toggle"
-                  class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium hover:underline"
-                >
-                  How It Works
-                  <svg
-                    id="submenu-icon"
-                    class="w-4 h-4 transform transition-transform"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </a>
-                <div
-                  id="how-it-works-submenu"
-                  class="hidden flex-col bg-white shadow-md w-full mt-1"
-                >
-                  <a
-                    href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
-                  >
-                    Item 1
-                  </a>
-                  <a
-                    href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
-                  >
-                    Item 2
-                  </a>
-                  <a
-                    href="#"
-                    class="block px-6 py-3 text-midnightblue text-left font-medium hover:underline"
-                  >
-                    Item 3
-                  </a>
-                </div>
-              </div>
-              <a
-                href="/developer.html"
-                class="block w-full px-6 py-3 font-bold text-midnightblue text-left  hover:underline"
-              >
-                Developer
-              </a>
-              <a
-                href="/case-study-page.html"
-                class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
-              >
-                Case Studies
-              </a>
-
-              <div class="w-full flex flex-col items-stretch gap-4 mt-4">
-                <a
-                  href="#"
-                  class="text-midnightblue font-medium text-center py-2 border border-midnightblue rounded hover:bg-gray-100 transition-colors"
-                >
-                  Login
-                </a>
-                <button
-                  class="bg-mediumslateblue-200 text-white font-medium text-center py-2 rounded hover:bg-mediumslateblue-100 transition-colors"
-                >
-                  Sign Up
-                </button>
-              </div>
             </div>
-          </header>
-<div class="self-stretch flex flex-row items-start justify-center py-0 px-5 box-border max-w-full">
+          </div>
+    
+          <a
+            class="[text-decoration:none] font-bold text-midnightblue"
+            href="/developer.html"
+            >Developer</a
+          >
+          <a
+            class="[text-decoration:none] font-medium text-midnightblue"
+            href="/case-study-page.html"
+            >Case Studies</a
+          >
+        </nav>
+    
+        <!-- Login and Sign-Up Section -->
+        <div class="hidden md:flex flex-row items-center gap-5">
+          <a
+            class="[text-decoration:none] font-medium text-midnightblue"
+            href="#"
+            >Login</a
+          >
+          <button
+            class="cursor-pointer [border:none] py-2 px-6 bg-mediumslateblue-200 rounded hover:bg-mediumslateblue-100"
+          >
+            <span class="text-white font-medium">Sign Up</span>
+          </button>
+        </div>
+        <!-- Hamburger Menu (Mobile Only) -->
+        <a
+          id="menu-toggle"
+          class="md:hidden flex items-center justify-center bg-white text-midnightblue"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </a>
+    
+    
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="md:hidden flex flex-col bg-white shadow-md py-10 w-3/4 h-full fixed top-0 left-0 z-50 transform -translate-x-full transition-transform duration-300"
+        >
+          <a
+            href="/"
+            class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+          >
+            Home
+          </a>
+          <a
+            href="/about-page.html"
+            class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+          >
+            About
+          </a>
+          <a
+            href="/resources-page.html"
+            class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+          >
+            Resources
+          </a>
+          <div class="relative">
+            <a
+              id="submenu-toggle"
+              class="w-full flex items-center justify-between px-6 py-3 text-midnightblue text-left font-medium cursor-pointer hover:underline"
+            >
+              How It Works
+             
+            </a>
+            <div
+              id="how-it-works-submenu"
+              class="hidden flex-col bg-white shadow-md rounded w-full mt-1"
+            >
+              <a
+                href="#"
+                class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+              >
+                Item 1
+              </a>
+              <a
+                href="#"
+                class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+              >
+                Item 2
+              </a>
+              <a
+                href="#"
+                class="block px-6 py-3 text-midnightblue text-left font-medium hover:bg-gray-100"
+              >
+                Item 3
+              </a>
+            </div>
+          </div>
+          <a
+            href="/developer.html"
+            class="block w-full px-6 py-3 font-bold text-midnightblue text-left hover:underline"
+          >
+            Developer
+          </a>
+          <a
+            href="/case-study-page.html"
+            class="block w-full px-6 py-3 text-midnightblue text-left font-medium hover:underline"
+          >
+            Case Studies
+          </a>
+    
+          <div class="w-full flex flex-col items-stretch gap-4 mt-4">
+            <a
+              href="#"
+              class="text-midnightblue font-medium text-center py-2 border border-midnightblue rounded hover:bg-gray-100 transition-colors"
+            >
+              Login
+            </a>
+            <button
+              class="bg-mediumslateblue-200 text-white font-medium text-center py-2 rounded hover:bg-mediumslateblue-100 transition-colors"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </header>
+<div class="self-stretch flex flex-row items-start justify-center py-0 md:px-5 px-2 box-border max-w-full">
   <div class="flex-1 rounded-xl overflow-hidden flex flex-col items-center justify-start pt-[80px] px-[35px] pb-[80px] box-border relative gap-8 max-w-full"
               style="background-image: url('/public/image-2@2x.png');
                background-size: cover; background-position: center; background-repeat: no-repeat;">
