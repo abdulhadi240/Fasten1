@@ -586,9 +586,11 @@
             >
               <div class="relative">
                 <!-- Gradient 1 -->
+                 <div class="hidden sm:block">
                 <div
                   class="absolute md:bottom-[-30px] right-[-40px] rounded-3xl w-[287px] h-[438px] bg-gradient-to-b from-[#6944BA66] to-[#31207200]"
                 ></div>
+              </div>
                 <!-- Gradient 2 -->
                 <div
                   class="absolute bottom-[-30px] right-[-78px] rounded-3xl w-[400px] h-[300px] bg-gradient-to-l from-[#6944BA66] to-[#31207200]"
@@ -616,13 +618,17 @@
           >
             <div class="h-[487px] flex-1 relative max-w-full">
               <!-- Gradient 1 -->
+               <div class="hidden sm:block">
               <div
                 class="absolute top-[0px] left-[27px] shadow-[0.8px_1.5px_28.2px_rgba(0,_0,_0,_0.04)] rounded-3xl-2 [background:linear-gradient(180deg,_rgba(105,_68,_186,_0.4),_rgba(49,_32,_114,_0))] w-[287px] h-[438px] overflow-hidden"
               ></div>
+            </div>
               <!-- Gradient 2 -->
+               <div class="">
               <div
                 class="absolute top-[118px] left-[0px] shadow-[0.8px_1.5px_28.2px_rgba(0,_0,_0,_0.04)] rounded-3xl-2 [background:linear-gradient(90deg,_rgba(105,_68,_186,_0.4),_rgba(49,_32,_114,_0))] w-[577px] h-[369px] overflow-hidden z-[1]"
               ></div>
+            </div>
               <!-- Image -->
               <img
                 class="absolute top-[27px] md:left-[48px] rounded-6xl w-[574px] h-[432px] overflow-hidden object-cover z-[2]"
@@ -847,10 +853,10 @@
       </section>
 
       <section
-        class="mt-14 self-stretch flex flex-row items-start justify-start pt-0 md:pb-[130px] md:pl-[30px] md:pr-8 box-border max-w-full shrink-0 text-left text-36xl-8 text-black font-website-body-body-large-regular lg:pb-[55px] lg:box-border px-3"
+        class="mt-14 self-stretch flex flex-row items-center justify-center pt-0 md:pl-[30px] md:pr-8 box-border max-w-full shrink-0 text-left text-36xl-8 text-black font-website-body-body-large-regular  lg:box-border px-3"
       >
         <div
-          class="flex-1 flex flex-col items-end justify-start gap-[100px] max-w-full"
+          class="flex-1 flex flex-col items-center justify-center gap-[100px] -mb-20 max-w-full"
         >
           <div
             class="self-stretch flex flex-row items-start justify-center box-border max-w-full text-center"
@@ -1013,8 +1019,8 @@
               </button>
             </div>
           </div>
-          <section class="py-24">
-            <div class="mx-auto max-w-6xl">
+          <section class="pb-24">
+            <div class="mx-auto max-w-7xl px-10 mb-16">
               <div
                 class="mb-14 flex flex-col justify-center items-center sm:flex-row sm:items-center sm:justify-between max-sm:gap-8"
               >
@@ -1072,39 +1078,7 @@
                 class="lg:flex grid grid-cols-1 md:grid-cols-2 mb-[10px] sm:mb-0 justify-center items-center gap-8 swiper mySwiper"
               >
                 <div class="swiper-wrapper w-full">
-                  <div
-                    class="swiper-slide group bg-white w-[500px] border border-solid border-gray-300 rounded-2xl px-6 py-1 transition-all duration-500 hover:border-indigo-600 slide-active:border-indigo-600"
-                  >
-                    <div
-                      class="flex items-center mb-4 gap-2 w-[500px] transition-all duration-500 ext-indigo-600 swiper-slide-active:text-indigo-600"
-                    ></div>
-                    <p
-                      class="text-sm text-gray-500 max-w-[500px] h-auto transition-all duration-500 group-hover:text-gray-800"
-                    >
-                      "Fasten has been an amazing partner - and I mean that in
-                      every sense of the word. They don't just provide a
-                      service, they dig in to understand the problem you're
-                      trying to solve and roll up their sleeves to help. The
-                      Fasten team..."
-                    </p>
-                    <div class="flex items-center gap-5 my-4">
-                      <img
-                        class="rounded-full object-cover w-12 h-12"
-                        src="https://pagedone.io/asset/uploads/1696229969.png"
-                        alt="avatar"
-                      />
-                      <div class="grid gap-1">
-                        <h5 class="text-gray-400 font-bold text-base">
-                          Jane D
-                        </h5>
-                        <img
-                          class="w-16"
-                          src="./public/image-121@2x.png"
-                          alt="avatar"
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  
                   <div
                     class="swiper-slide group bg-white w-[500px] border border-solid border-gray-300 rounded-2xl px-6 py-1 transition-all duration-500 hover:border-indigo-600 slide-active:border-indigo-600"
                   >
@@ -1280,6 +1254,10 @@
               slidesPerView: 2,
               spaceBetween: 28,
               centeredSlides: true,
+              autoplay: {
+                delay: 3000, // Slide every 3 seconds
+                disableOnInteraction: false, // Keeps autoplay active after interaction
+                },
               loop: true,
               pagination: {
                 el: ".swiper-pagination",
@@ -1360,7 +1338,7 @@
       </section>
 
       <div
-      class="w-full relative bg-neutral-100 overflow-hidden flex flex-col items-start justify-start leading-[normal] tracking-[normal]"
+      class="w-full relative bg-neutral-100 overflow-hidden flex flex-col items-center justify-center leading-[normal] tracking-[normal]"
     >
       
       
@@ -1370,10 +1348,11 @@
     alt=""
     src="/public/image-1-12@2x.png"
   />
-
+  
   <footer
-class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-start pt-[79.7px] sm:px-[60px] px-5 pb-[30.3px] box-border gap-[97.3px] shrink-0 max-w-full z-50 mt-[-200px]  text-left text-lg text-darkslategray-100 font-website-body-body-large-regular"
+class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-start pt-10 sm:pt-[50.7px]  box-border gap-[97.3px] shrink-0 max-w-full z-50 mt-[-200px]  text-left text-lg text-darkslategray-100 font-website-body-body-large-regular"
 >
+<div class="sm:px-10 px-5">
 <!-- Top Section -->
 <div class="flex flex-col md:flex-row w-full justify-between gap-10 md:gap-16">
 <!-- Left Section -->
@@ -1391,7 +1370,7 @@ class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-
 </div>
 
 <!-- Links Section -->
-<div class="w-full md:w-2/3 grid grid-cols-2 sm:grid-cols-4 gap-8">
+<div class="w-full md:w-2/3 grid grid-cols-2 sm:grid-cols-4 gap-8 mb-3">
   <div class="flex flex-col gap-4">
     <b class="text-gray-500 text-sm md:text-base">Company</b>
     <a href="#" class="text-darkslategray-100 text-sm md:text-base">About</a>
@@ -1422,10 +1401,11 @@ class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-
 </div>
 
 <!-- Bottom Section -->
-<div class="w-full border-t border-darkgray pt-4">
+<div class="w-full  border-t my-4 py-6">
 <p class="text-center text-sm md:text-base text-black">
   © 2022 Fasten Health™. All Rights Reserved.
 </p>
+</div>
 </div>
 </footer>
     </div>

@@ -57,3 +57,14 @@ body {
     --tw-text-opacity: 1;
     color: rgb(79 70 229 / var(--tw-text-opacity));
 }
+
+.swiper-container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  width: auto; /* Allow Swiper.js to manage the width */
+  max-width: 100%; /* Prevent overflow */
+  flex-shrink: 0; /* Avoid slides from shrinking */
+}
