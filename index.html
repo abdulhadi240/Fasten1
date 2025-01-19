@@ -582,7 +582,7 @@
 
             <!-- Right Section: Image -->
             <div
-              class="flex items-start mx-14 justify-start sm:items-center sm:justify-center flex-1 relative"
+              class="flex items-start sm:mx-14 justify-start sm:items-center sm:justify-center flex-1 relative"
             >
               <div class="relative">
                 <!-- Gradient 1 -->
@@ -592,12 +592,14 @@
                 ></div>
               </div>
                 <!-- Gradient 2 -->
-                <div
+                 <div class="hidden sm:block">               <div
                   class="absolute bottom-[-30px] right-[-68px] rounded-3xl w-[400px] h-[300px] bg-gradient-to-l from-[#6944BA66] to-[#31207200]"
                 ></div>
+              </div>
+ 
                 <!-- Image -->
                 <img
-                  class="relative rounded-3xl w-full max-w-[574px] h-auto object-cover z-10"
+                  class="relative rounded-3xl w-full sm:max-w-[574px] h-auto sm:object-cover z-10"
                   src="/public/frame-9-2@2x.png"
                   alt="Fasten Connect"
                 />
@@ -624,14 +626,15 @@
               ></div>
             </div>
               <!-- Gradient 2 -->
-               <div class="">
+               <div class="hidden sm:block">
               <div
                 class="absolute top-[118px] left-[0px] shadow-[0.8px_1.5px_28.2px_rgba(0,_0,_0,_0.04)] rounded-3xl-2 [background:linear-gradient(90deg,_rgba(105,_68,_186,_0.4),_rgba(49,_32,_114,_0))] w-[577px] h-[369px] overflow-hidden z-[1]"
               ></div>
             </div>
               <!-- Image -->
               <img
-                class="absolute top-[27px] md:left-[48px] rounded-6xl w-[574px] h-[432px] overflow-hidden object-cover z-[2]"
+                class="absolute top-[27px] md:left-[48px] right-4 sm:right-0 w-full rounded-6xl sm:max-w-[574px] h-auto overflow-hidden object-cover z-[2]"
+                
                 alt=""
                 src="/public/frame-9-3@2x.png"
               />
@@ -856,7 +859,7 @@
         class="mt-14 self-stretch flex flex-row items-center justify-center pt-0 md:pl-[30px] md:pr-8 box-border max-w-full shrink-0 text-left text-36xl-8 text-black font-website-body-body-large-regular  lg:box-border px-3"
       >
         <div
-          class="flex-1 flex flex-col items-center justify-center gap-[100px] -mb-20 max-w-full"
+          class="flex-1 flex flex-col items-center justify-center gap-[100px] -mb-32 max-w-full"
         >
           <div
             class="self-stretch flex flex-row items-start justify-center box-border max-w-full text-center"
@@ -1350,7 +1353,7 @@
   />
   
   <footer
-class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-start pt-10 sm:pt-[50.7px]  box-border gap-[97.3px] shrink-0 max-w-full z-50 mt-[-200px]  text-left text-lg text-darkslategray-100 font-website-body-body-large-regular"
+class="self-stretch  bg-white overflow-hidden flex flex-col items-start justify-start pt-10 sm:pt-[50.7px]  box-border gap-[97.3px] shrink-0 max-w-full z-50 mt-[-50px] sm:mt-[-200px]  text-left text-lg text-darkslategray-100 font-website-body-body-large-regular"
 >
 <div class="sm:px-10 px-5">
 <!-- Top Section -->
