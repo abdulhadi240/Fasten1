@@ -656,18 +656,6 @@
   margin-top: 80px;
 }
 
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-
-.-mt-20 {
-  margin-top: -5rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -5085,11 +5073,6 @@ body {
     top: 500px;
   }
 
-  .sm\:mx-14 {
-    margin-left: 3.5rem;
-    margin-right: 3.5rem;
-  }
-
   .sm\:mb-0 {
     margin-bottom: 0;
   }
@@ -5745,12 +5728,16 @@ body {
     top: 449px;
   }
 
+  .lg\:-mt-20 {
+    margin-top: -5rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0;
   }
 
-  .lg\:-mt-20 {
-    margin-top: -5rem;
+  .lg\:mt-\[-250px\] {
+    margin-top: -250px;
   }
 
   .lg\:box-border {
@@ -5863,34 +5850,26 @@ body {
     font-size: 22px;
   }
 
-  .lg\:text-\[30px\] {
-    font-size: 30px;
-  }
-
   .lg\:leading-\[36px\] {
     line-height: 36px;
   }
 }
 
 @media (width >= 1280px) {
+  .xl\:mt-\[-300px\] {
+    margin-top: -300px;
+  }
+
   .xl\:text-7xl {
     font-size: 26px;
   }
 
-  .xl\:text-\[30px\] {
-    font-size: 30px;
+  .xl\:text-\[28px\] {
+    font-size: 28px;
   }
 
   .xl\:text-\[65px\] {
     font-size: 65px;
-  }
-
-  .xl\:text-\[25px\] {
-    font-size: 25px;
-  }
-
-  .xl\:text-\[28px\] {
-    font-size: 28px;
   }
 }
 
